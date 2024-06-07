@@ -2,6 +2,7 @@ import Link from "next/link";
 import React, { useState, FC } from "react";
 import { FaBars, FaTimes, FaChevronDown } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { MenuItem } from "@/app/layout";
 
 interface DropdownLink {
   id: number;
@@ -16,7 +17,12 @@ interface NavLink {
   dropdown: DropdownLink[];
 }
 
-const Header: FC = () => {
+interface HeaderProps {
+  logoUrl: string;
+  menuItems: MenuItem[];
+}
+
+const Header: FC<HeaderProps> = ({ logoUrl, menuItems }) => {
   const [nav, setNav] = useState<boolean>(false);
   const [dropdownOpen, setDropdownOpen] = useState<number | null>(null);
 

@@ -7,7 +7,7 @@ import Header from "@/components/header";
 
 const inter = Inter({ subsets: ["latin"] });
 
-interface MenuItem {
+export interface MenuItem {
   title: string;
   href?: string; // Optional for custom links
   children?: MenuItem[]; // For nested menus
