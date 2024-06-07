@@ -2,7 +2,9 @@ import React from 'react'
 
 const CoreValues = () => {
   return (
-    <div>CoreValues</div>
+    <>
+      <div>CoreValues</div>
+    </>
   )
 }
 

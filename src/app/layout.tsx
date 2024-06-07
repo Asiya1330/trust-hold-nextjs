@@ -9,11 +9,11 @@ const inter = Inter({ subsets: ["latin"] });
 
 export interface MenuItem {
   title: string;
-  href?: string; // Optional for custom links
-  children?: MenuItem[]; // For nested menus
+  href?: string;
+  children?: MenuItem[];
 }
 const menuItems: MenuItem[] = [
-  { title: 'Home', href: '/' }, // Add href for direct linking
+  { title: 'Home', href: '/' },
   { title: 'About', href: '/about' },
   {
     title: 'Contact',
@@ -36,8 +36,8 @@ export default function RootLayout({
 }>) {
   return (
   <div className="min-h-screen flex flex-col">
-  <Header logoUrl={logoUrl} menuItems={menuItems} />
-    <main className="flex-grow px-4 py-8">{children}</main>
+  {/* <Header logoUrl={logoUrl} menuItems={menuItems} /> */}
+    <main className="flex-grow">{children}</main>
   <Footer />
 </div>
   );

@@ -105,9 +105,8 @@ const Header: FC<HeaderProps> = ({ logoUrl, menuItems }) => {
         <div>
           <h1 className="text-5xl font-signature ml-2">
             <Link
-              className="link-underline link-underline-black"
+              className="link-underline link-underline-black z-10"
               href="/"
-              
               rel="noreferrer"
             >
               Logo
@@ -151,13 +150,13 @@ const Header: FC<HeaderProps> = ({ logoUrl, menuItems }) => {
 
         <div
           onClick={() => setNav(!nav)}
-          className="cursor-pointer pr-4 z-10 text-black md:hidden"
+          className="cursor-pointer pr-4 z-20 text-black md:hidden"
         >
           {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
         </div>
 
         {nav && (
-          <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-white to-gray-200 text-black overflow-y-auto">
+          <ul className="z-10 flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-white to-gray-200 text-black">
             {links.map(({ id, link, text, dropdown }) => (
               <li key={id} className="w-full">
                 <div
