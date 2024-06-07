@@ -107,7 +107,7 @@ const Header: FC<HeaderProps> = ({ logoUrl, menuItems }) => {
             <Link
               className="link-underline link-underline-black"
               href="/"
-              target="_blank"
+              
               rel="noreferrer"
             >
               Logo

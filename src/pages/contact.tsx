@@ -15,9 +15,17 @@ const contact = () => {
           <p className="mb-4">Atrium Building, 3rd Floor</p>
           <p className="mb-4">Beirut Central District, Lebanon</p>
           <p className="mb-4">T.I.F.</p>
-          <p className="mb-4">M. +961 1 999 802/3</p>
-          <p className="mb-4">+961 76 725 000</p>
-          <p className="mb-4">info@trustholdgroup.com</p>
+          <p className="mb-4">
+            M. <a href={`tel:+96119998023`}>+961 1 999 802/3</a>
+          </p>
+          <p className="mb-4">
+            <a href={`tel:+96176725000`}>+961 76 725 000</a>
+          </p>
+          <p className="mb-4">
+            <a href={`mailto:info@trustholdgroup.com`}>
+              info@trustholdgroup.com
+            </a>
+          </p>
         </div>
       </motion.div>
       <motion.div
