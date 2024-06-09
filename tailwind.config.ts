@@ -12,6 +12,7 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "navbar-gradient": 'linear-gradient(180deg, #ffffff 0%, #e2edff 100%)',
       },
       colors: {
         hover: '#ffcccc',

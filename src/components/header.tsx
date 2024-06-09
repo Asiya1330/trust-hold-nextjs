@@ -3,6 +3,7 @@ import React, { useState, FC } from "react";
 import { FaBars, FaTimes, FaChevronDown } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { MenuItem } from "@/app/layout";
+import Image from "next/image";
 
 interface DropdownLink {
   id: number;
@@ -101,7 +102,9 @@ const Header: FC<HeaderProps> = ({ logoUrl, menuItems }) => {
       variants={topdown}
       transition={{ duration: 0.5 }}
     >
-      <div className="flex justify-between items-center w-full h-20 px-4 text-black bg-white nav">
+
+<div className="fixed top-auto mt-4  left-0 w-11/12 mx-10 h-20 px-4 text-black bg-navbar-gradient shadow-md z-50 flex justify-between items-center rounded-lg">
+      {/* <div className="flex justify-between items-center w-full h-20 px-4 text-black bg-white nav"> */}
         <div>
           <h1 className="text-5xl font-signature ml-2">
             <Link
@@ -109,7 +112,13 @@ const Header: FC<HeaderProps> = ({ logoUrl, menuItems }) => {
               href="/"
               rel="noreferrer"
             >
-              Logo
+              <Image
+                src="/trusthold-logo.png"
+                alt="Trusthold Logo" // Descriptive alt text for accessibility
+                width={ 100 }
+                height={60}// Or "responsive" or "intrinsic" based on your needs (see below)
+                priority // Prioritize loading this image (optional)
+              />
             </Link>
           </h1>
         </div>

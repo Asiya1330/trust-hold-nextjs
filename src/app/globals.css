@@ -3,13 +3,35 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;  /* Black text color */
-  --background-rgb: 255, 255, 255;  /* White background color */
+  --foreground-rgb: 0, 0, 0;
+  /* Black text color */
+  --background-rgb: 255, 255, 255;
+  /* White background color */
 }
 
 body {
   color: rgb(var(--foreground-rgb));
   background-color: rgb(var(--background-rgb));
+  font-family: 'Outfit', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Libre Baskerville', serif;
+}
+
+p,
+ul,
+a,
+ol,
+label,
+span {
+  font-family: 'Outfit', sans-serif;
+
 }
 
 @layer utilities {
