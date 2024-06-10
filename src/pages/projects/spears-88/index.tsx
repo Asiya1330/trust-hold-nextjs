@@ -1,5 +1,5 @@
+import ProjectLayout from '@/components/projectLayout'
 import React from 'react'
-import Layout from '../layout'
 
 const Spears88 = () => {
     const tabs = [
@@ -11,7 +11,8 @@ const Spears88 = () => {
         {name:"Random", url:'/project'},
     ]
   return (
-    <Layout tabs={tabs}>Spears88</Layout>
+    // <div>Spears 88</div>
+    <ProjectLayout tabs={tabs}>Spears88</ProjectLayout>
   )
 }
 

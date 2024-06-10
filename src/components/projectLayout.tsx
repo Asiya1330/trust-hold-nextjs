@@ -2,13 +2,14 @@ import { Url } from "next/dist/shared/lib/router/router";
 import { useRouter } from "next/router";
 import React, { FC, ReactNode, useState } from "react";
 
-const Layout = ({
+const ProjectLayout = ({
   children,
   tabs,
 }: {
   children: ReactNode;
   tabs: Array<{ name: String; url:Url }>;
 }) => {
+  console.log("Project layout",tabs);
   const [activeTab, setActiveTab] = useState(tabs[0]);
   const route = useRouter();
 
@@ -36,4 +37,4 @@ const Layout = ({
   );
 };
 
-export default Layout;
+export default ProjectLayout;

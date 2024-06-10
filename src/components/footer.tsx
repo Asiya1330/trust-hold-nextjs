@@ -46,7 +46,7 @@ const linkSections: LinkSection[] = [
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-[#bb272d] text-white p-4 text-center">
+    <footer className="bg-[#0d001d] text-white p-4 text-center py-12">
      <div className="mx-auto px-4 container overflow-hidden flex flex-col lg:flex-row justify-between">
         <Link href="/" className="block mr-4 w-1/3">
             <Image src="/trusthold-logo.png" width={100} height={60} className="w-40 ml-4 lg:ml-0" alt="logo"/>
@@ -54,7 +54,7 @@ const Footer: React.FC = () => {
         <div className="w-2/3 block sm:flex text-sm mt-6 lg:mt-0">
         {linkSections.map((section) => (
             <ul key={section.id} className="list-none p-0 flex flex-col text-left w-full">
-              <li className="inline-block py-2 px-3 text-white uppercase tracking-wide">{section.title}</li>
+              <li className="inline-block text-xl mb-4 py-2 px-3 text-white uppercase tracking-wide relative after:content-[''] after:block after:w-6 after:h-[2px] after:bg-red-500 after:absolute after:bottom-0">{section.title}</li>
               {section.links.map((link) => (
                 <li key={link.id}>
                   <Link href={link.link} className="inline-block py-2 px-3 hover:text-white no-underline">{link.text}</Link>

@@ -45,7 +45,6 @@ export const createSection = (Component: React.FC, direction: 'left' | 'right' |
         animate={inView ? "visible" : "hidden"}
         variants={variants}
         transition={{ duration: 0.5 }}
-        className="shadow-md rounded-md mt-6"
       >
         <Component />
       </motion.div>
