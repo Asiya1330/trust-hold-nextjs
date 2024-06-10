@@ -18,12 +18,7 @@ interface NavLink {
   dropdown: DropdownLink[];
 }
 
-interface HeaderProps {
-  logoUrl: string;
-  menuItems: MenuItem[];
-}
-
-const Header: FC<HeaderProps> = ({ logoUrl, menuItems }) => {
+const Header = () => {
   const [nav, setNav] = useState<boolean>(false);
   const [dropdownOpen, setDropdownOpen] = useState<number | null>(null);
 

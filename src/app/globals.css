@@ -39,3 +39,31 @@ span {
     text-wrap: balance;
   }
 }
+
+/* CustomSlider.css */
+.react-awesome-slider {
+  /* Add CSS styles to the slider container if needed */
+}
+
+.react-awesome-slider--dots {
+  /* Customize the style of the navigation dots */
+}
+
+.react-awesome-slider--dots li {
+  /* Customize the individual navigation dots */
+}
+
+.awssld__bullets .awssld__bullets--active,
+.awssld__bullets button {
+  /* Customize the button inside the navigation dots */
+  background-color: #0d001d !important; /* Change the background color to blueish */
+  border-color: #0d001d; /* Change the border color to match */
+}
+.awssld__content {
+  background: none !important;
+}
+
+.awssld__timer .awssld__timer--animated .awssld__timer--run {
+  display: none !important;
+  background-color: transparent !important;
+}

@@ -16,43 +16,41 @@ const LegalStructure1 = () => {
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div className="flex justify-center items-center">
-          <motion.div
-            className="flex justify-center items-center"
-            initial="hidden"
-            animate="visible"
-            variants={imageVariants}
-            transition={{ duration: 1 }}
-          >
-            <Image
-              src="/officeImg.jpg"
-              alt="Descriptive Alt Text"
-              className="max-w-full h-auto"
-              width={500}
-              height={500}
-            />
-          </motion.div>
-        </div>
-        <div className="flex flex-col justify-start items-start px-4">
-          <motion.div
-            className="flex flex-col justify-start items-start px-4"
-            initial="hidden"
-            animate="visible"
-            variants={textVariants}
-            transition={{ duration: 1 }}
-          >
-            <h2 className="text-2xl md:text-4xl mb-4 text-primary font-light">
-              Profile
-            </h2>
-            <p className="text-base md:text-lg leading-relaxed">
-              This is your text content. It can be a description, an article, or
-              any other type of content you want to display alongside the image.
-              This section is styled to be responsive and adapt to different
-              screen sizes. Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Corrupti magni a temporibus cupiditate excepturi, 
-            </p>
-          </motion.div>
-        </div>
+        <motion.div
+          className="flex justify-center items-center"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={imageVariants}
+          transition={{ duration: 1 }}
+        >
+          <Image
+            src="/officeImg.jpg"
+            alt="Descriptive Alt Text"
+            className="max-w-full h-auto"
+            width={500}
+            height={500}
+          />
+        </motion.div>
+        <motion.div
+          className="flex flex-col justify-start items-start px-4"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={textVariants}
+          transition={{ duration: 1 }}
+        >
+          <h2 className="text-2xl md:text-4xl mb-4 text-primary font-light">
+            Profile
+          </h2>
+          <p className="text-base md:text-lg leading-relaxed">
+            This is your text content. It can be a description, an article, or
+            any other type of content you want to display alongside the image.
+            This section is styled to be responsive and adapt to different
+            screen sizes. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Corrupti magni a temporibus cupiditate excepturi, 
+          </p>
+        </motion.div>
       </div>
     </div>
   );
