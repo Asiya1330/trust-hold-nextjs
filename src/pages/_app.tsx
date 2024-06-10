@@ -5,7 +5,6 @@ import RootLayout from '../app/layout'; // Import the layout component
 // Import AppProps type from Next.js
 import type { AppProps } from 'next/app';
 import { Libre_Baskerville, Outfit } from 'next/font/google';
-import Header from '@/components/header';
 
 const outfit = Outfit({
   subsets: ['latin'],
@@ -18,7 +17,6 @@ const libreBaskerville = Libre_Baskerville({
 function MyApp({ Component, pageProps }: AppProps<Record<string, unknown>>) {
   return (
     <RootLayout>
-      <Header />
       <div className={`${outfit.className} ${libreBaskerville.className}`}>
         <Component {...pageProps} />
       </div>

@@ -13,21 +13,21 @@ export interface MenuItem {
   children?: MenuItem[];
 }
 const menuItems: MenuItem[] = [
-  { title: 'Home', href: '/' },
-  { title: 'About', href: '/about' },
+  { title: "Home", href: "/" },
+  { title: "About", href: "/about" },
   {
-    title: 'Contact',
-    href: '/contact',
+    title: "Contact",
+    href: "/contact",
   },
   {
-    title: 'Blog',
+    title: "Blog",
     children: [
-      { title: 'Latest Posts', href: '/blog' },
-      { title: 'Categories', href: '/blog/categories' },
+      { title: "Latest Posts", href: "/blog" },
+      { title: "Categories", href: "/blog/categories" },
     ],
   },
 ];
-const logoUrl = '/your-logo.svg';
+const logoUrl = "/your-logo.svg";
 
 export default function RootLayout({
   children,
@@ -35,10 +35,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-  <div className="min-h-screen flex flex-col">
-  {/* <Header logoUrl={logoUrl} menuItems={menuItems} /> */}
-    <main className="flex-grow">{children}</main>
-  <Footer />
-</div>
+    <div className="min-h-screen flex flex-col">
+      <Header />
+      <main className="flex-grow">{children}</main>
+      <Footer />
+    </div>
   );
 }
