@@ -47,8 +47,8 @@ const linkSections: LinkSection[] = [
 const Footer: React.FC = () => {
   return (
     <footer className="bg-[#0d001d] text-white p-4 text-center py-12">
-     <div className="mx-auto px-4 container overflow-hidden flex flex-col lg:flex-row justify-between">
-        <Link href="/" className="block mr-4 w-1/3">
+     <div className="mx-auto container overflow-hidden flex flex-col md:flex-row justify-between">
+        <Link href="/" className="block mr-4 md:w-1/3">
             <Image src="/trusthold-logo.png" width={100} height={60} className="w-40 ml-4 lg:ml-0" alt="logo"/>
         </Link>
         <div className="w-2/3 block sm:flex text-sm mt-6 lg:mt-0">

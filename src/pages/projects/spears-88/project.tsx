@@ -1,8 +1,8 @@
 import ProjectLayout from '@/components/projectLayout'
 import React from 'react'
 
-const Spears88 = () => {
-     const tabs = [
+const Project = () => {
+    const tabs = [
         {name:"Project", url:'spears-88/project'},
         {name:"Settings", url:'spears-88/settings'},
         {name:"Contact", url:'spears-88/contact'},
@@ -11,9 +11,11 @@ const Spears88 = () => {
         {name:"Random", url:'spears-88/random'},
     ]
   return (
-    // <div>Spears 88</div>
-    <ProjectLayout tabs={tabs}>Spears88</ProjectLayout>
+    <ProjectLayout tabs={tabs}>
+
+        xeeee
+    </ProjectLayout>
   )
 }
 
-export default Spears88
+export default Project

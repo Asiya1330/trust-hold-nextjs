@@ -14,7 +14,7 @@ const profile = () => {
   };
   
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto py-8">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="flex justify-center items-center">
           <motion.div
@@ -27,13 +27,13 @@ const profile = () => {
             <Image
               src="/officeImg.jpg"
               alt="Descriptive Alt Text"
-              className="max-w-full h-auto"
+              className="max-w-full h-auto rounded-3xl"
               width={500}
               height={500}
             />
           </motion.div>
         </div>
-        <div className="flex flex-col justify-start items-start px-4">
+        <div className="flex flex-col justify-start items-start">
           <motion.div
             className="flex flex-col justify-start items-start px-4"
             initial="hidden"
