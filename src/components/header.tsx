@@ -98,8 +98,8 @@ const Header = () => {
       transition={{ duration: 0.5 }}
     >
 
-<div className="fixed top-auto mt-4  left-0 w-11/12 mx-10 h-20 px-4 text-black bg-navbar-gradient shadow-md z-50 flex justify-between items-center rounded-lg">
-      {/* <div className="flex justify-between items-center w-full h-20 px-4 text-black bg-white nav"> */}
+      <div className="fixed top-auto mt-4  left-0 w-11/12 mx-10 h-20 px-4 text-black bg-navbar-gradient shadow-md z-50 flex justify-between items-center rounded-lg">
+        {/* <div className="flex justify-between items-center w-full h-20 px-4 text-black bg-white nav"> */}
         <div>
           <h1 className="text-5xl font-signature ml-2">
             <Link
@@ -110,7 +110,7 @@ const Header = () => {
               <Image
                 src="/trusthold-logo.png"
                 alt="Trusthold Logo" // Descriptive alt text for accessibility
-                width={ 100 }
+                width={170}
                 height={60}// Or "responsive" or "intrinsic" based on your needs (see below)
                 priority // Prioritize loading this image (optional)
               />
@@ -122,7 +122,7 @@ const Header = () => {
           {links.map(({ id, link, dropdown, text }) => (
             <li
               key={id}
-              className="relative nav-links px-4 cursor-pointer capitalize font-medium text-black hover:scale-105 hover:text-red-500 duration-200 link-underline"
+              className={`relative flex justify-center items-center nav-links px-4 cursor-pointer capitalize font-medium text-black hover:scale-105 duration-200 link-underline ${text === "Contact us" ? "bg-red-500 text-white rounded-3xl py-3" : "hover:text-red-500"}`}
               onMouseEnter={() => handleMouseEnter(id)}
               onMouseLeave={handleMouseLeave}
             >
@@ -134,9 +134,8 @@ const Header = () => {
               </Link>
               {dropdown.length > 0 && (
                 <ul
-                  className={`absolute top-[13px] left-0 border bg-white text-black w-48 mt-2 rounded-md transition-all duration-200 ${
-                    dropdownOpen === id ? "block" : "hidden"
-                  }`}
+                  className={`absolute top-[30px] left-0 border bg-white text-black w-48 mt-2 rounded-md transition-all duration-200 ${dropdownOpen === id ? "block" : "hidden"
+                    }`}
                 >
                   {dropdown.map((subLink) => (
                     <li
