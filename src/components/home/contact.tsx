@@ -48,7 +48,7 @@ const Contact = () => {
             transition={{ duration: 1 }}
           >
             <Image
-              className=""
+              className="rounded-3xl"
               src={"/contact.jpg"}
               width={400}
               height={600}

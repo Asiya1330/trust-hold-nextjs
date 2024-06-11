@@ -63,7 +63,7 @@ span {
   background: none !important;
 }
 
-.awssld__timer .awssld__timer--animated .awssld__timer--run {
+.awssld__timer ,.awssld__timer--animated, .awssld__timer--run {
   display: none !important;
   background-color: transparent !important;
 }

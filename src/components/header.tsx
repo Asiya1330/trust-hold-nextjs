@@ -98,8 +98,7 @@ const Header = () => {
       transition={{ duration: 0.5 }}
     >
 
-      <div className="fixed top-auto mt-4  left-0 w-11/12 mx-10 h-20 px-4 text-black bg-navbar-gradient shadow-md z-50 flex justify-between items-center rounded-lg">
-        {/* <div className="flex justify-between items-center w-full h-20 px-4 text-black bg-white nav"> */}
+<div className="fixed top-auto mt-4  left-0 w-full md:w-11/12 md:mx-10 h-20 px-4 text-black bg-navbar-gradient shadow-md z-50 flex justify-between items-center rounded-lg">
         <div>
           <h1 className="text-5xl font-signature ml-2">
             <Link

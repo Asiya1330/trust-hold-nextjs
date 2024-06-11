@@ -40,7 +40,7 @@ const OrganizationChart = () => {
             <Image
               src="/officeImg.jpg"
               alt="Descriptive Alt Text"
-              className="max-w-full h-auto"
+              className="max-w-full h-auto rounded-3xl"
               width={500}
               height={500}
             />
