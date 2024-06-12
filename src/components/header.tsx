@@ -29,6 +29,12 @@ const Header = () => {
 
   const links: NavLink[] = [
     {
+      id: 0, // Assigned 0 to keep the order
+      link: "/",
+      text: "Home",
+      dropdown: [],
+    },
+    {
       id: 1,
       link: "#",
       text: "About",
@@ -37,6 +43,9 @@ const Header = () => {
         { id: 2, link: "/about/core-values", text: "Core Values" },
         { id: 3, link: "/about/mission", text: "Vision & Mission" },
         { id: 4, link: "/about/team", text: "Management Team" },
+        { id: 5, link: "/media", text: "Media" },
+        { id: 6, link: "/news", text: "News" },
+        { id: 7, link: "/careers", text: "Careers" },
       ],
     },
     {
@@ -58,29 +67,12 @@ const Header = () => {
     },
     {
       id: 4,
-      link: "/media",
-      text: "Media",
-      dropdown: [],
-    },
-    {
-      id: 5,
-      link: "/news",
-      text: "News",
-      dropdown: [],
-    },
-    {
-      id: 6,
-      link: "/careers",
-      text: "Careers",
-      dropdown: [],
-    },
-    {
-      id: 7,
       link: "/contact",
       text: "Contact us",
       dropdown: [],
     },
   ];
+  
 
   const handleMouseEnter = (id: number) => {
     setDropdownOpen(id);
@@ -121,7 +113,7 @@ const Header = () => {
           {links.map(({ id, link, dropdown, text }) => (
             <li
               key={id}
-              className={`relative flex justify-center items-center nav-links px-4 cursor-pointer capitalize font-medium text-black hover:scale-105 duration-200 link-underline ${text === "Contact us" ? "bg-red-500 text-white rounded-3xl py-3" : "hover:text-red-500"}`}
+              className={`relative flex justify-center items-center nav-links px-6 cursor-pointer capitalize font-medium text-black hover:scale-105 duration-200 link-underline ${text === "Contact us" ? "bg-red-500 text-white rounded-3xl py-3 ml-4" : "hover:text-red-500"}`}
               onMouseEnter={() => handleMouseEnter(id)}
               onMouseLeave={handleMouseLeave}
             >
