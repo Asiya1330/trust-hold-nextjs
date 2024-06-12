@@ -67,6 +67,12 @@ const Header = () => {
     },
     {
       id: 4,
+      link: "/investment-opportunities",
+      text: "Investment Opportunities",
+      dropdown: [],
+    },
+    {
+      id: 5,
       link: "/contact",
       text: "Contact us",
       dropdown: [],
