@@ -109,7 +109,7 @@ const Header = () => {
               <Image
                 src="/trusthold-logo.png"
                 alt="Trusthold Logo" // Descriptive alt text for accessibility
-                width={170}
+                width={200}
                 height={60}// Or "responsive" or "intrinsic" based on your needs (see below)
                 priority // Prioritize loading this image (optional)
               />

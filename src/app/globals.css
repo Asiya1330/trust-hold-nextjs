@@ -67,3 +67,10 @@ span {
   display: none !important;
   background-color: transparent !important;
 }
+
+.slick-list {
+  height: 100vh;
+}
+.slick-track {
+  height: 100%;
+}

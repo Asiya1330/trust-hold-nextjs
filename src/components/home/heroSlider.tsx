@@ -1,33 +1,63 @@
 // CustomSlider.tsx
-import React from 'react';
-import AwesomeSlider from 'react-awesome-slider';
-// @ts-ignore
-import withAutoplay from 'react-awesome-slider/dist/autoplay';
-import 'react-awesome-slider/dist/styles.css';
-import Image from 'next/image';
+import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Image from "next/image";
 
 const CustomSlider = () => {
-  const AutoplaySlider = withAutoplay(AwesomeSlider);
+  const settings = {
+    dots: false, // Hide the navigation bullets
+    arrows: false, // Hide the left and right arrow buttons
+    infinite: true, // Enable infinite scrolling
+    autoplay: true, // Enable autoplay
+    autoplaySpeed: 3000, // Set the autoplay interval to 3000ms
+    pauseOnHover: false, // Should stop playing on user interaction
+    fade: true, // Enable fade transition
+  };
+
   return (
-    <AutoplaySlider
-    bullets={true} // Hide the navigation bullets
-      buttons={false} // Hide the left and right arrow buttons
-      organicArrows={false} // Hide the organic arrow buttons
-      infinite={true} // 
-      play={true}
-    cancelOnInteraction={false} // should stop playing on user interaction
-    interval={6000}
-       >
+    <Slider {...settings}>
       <div>
-        <Image src="/hero-building-img.png" alt="Image 1" width={500} height={500} />
+        <Image
+          src="/1st.jpeg"
+          alt="Image 1"
+          layout="fill"
+          objectFit="cover"
+        />
       </div>
       <div>
-        <Image src="/loft705.jpeg" alt="Image 2" width={500} height={500} />
+        <Image
+          src="/1858-2nd.jpeg"
+          alt="Image 2"
+          layout="fill"
+          objectFit="cover"
+        />
       </div>
       <div>
-        <Image src="/rubik1709.jpeg" alt="Image 3" width={500} height={500} />
+        <Image
+          src="/rubik-3rd.jpeg"
+          alt="Image 3"
+          layout="fill"
+          objectFit="cover"
+        />
       </div>
-    </AutoplaySlider>
+      <div>
+        <Image
+          src="/loft705-4th.jpeg"
+          alt="Image 3"
+          layout="fill"
+          objectFit="cover"
+        />
+      </div><div>
+        <Image
+          src="/spears88-5th.jpeg"
+          alt="Image 3"
+          layout="fill"
+          objectFit="cover"
+        />
+      </div>
+    </Slider>
   );
 };
 
