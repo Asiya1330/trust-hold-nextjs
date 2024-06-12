@@ -8,7 +8,7 @@ const Hero: FC = () => {
 
       <div className="relative flex items-center justify-center pr-12">
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-4">
-          <div className="flex flex-col justify-center items-start text-left text-black ">
+          <div className="flex flex-col justify-center items-start text-left text-black md:px-8">
             <h1 className="text-4xl text-primary font-bold mb-4">
               Welcome to Tusthold Group
             </h1>
