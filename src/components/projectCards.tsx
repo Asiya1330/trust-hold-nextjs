@@ -12,7 +12,7 @@ interface ProjectCardProps {
 const ProjectCard: FC<ProjectCardProps> = ({ image, title, description, animation }) => {
   return (
     <motion.div 
-      className="bg-white rounded-lg shadow-lg p-5 m-3 max-w-xs"
+      className="bg-white rounded-lg shadow-lg my-5 p-2  max-w-xs"
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
       initial="hidden"

@@ -14,7 +14,7 @@ const LegalStructure1 = () => {
   };
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto py-8">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <motion.div
           className="flex justify-center items-center"
@@ -33,7 +33,7 @@ const LegalStructure1 = () => {
           />
         </motion.div>
         <motion.div
-          className="flex flex-col justify-start items-start px-4"
+          className="flex flex-col justify-start items-start"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
