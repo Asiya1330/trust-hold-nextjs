@@ -68,7 +68,7 @@ const ProjectCards: FC = () => {
   ];
 
   return (
-    <div className="flex flex-wrap justify-center">
+    <div className="flex flex-wrap justify-around">
       {projects.map((project, index) => (
         <ProjectCard 
           key={index} 

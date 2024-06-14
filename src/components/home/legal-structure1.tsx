@@ -14,13 +14,12 @@ const LegalStructure1 = () => {
   };
 
   return (
-    <div className="container mx-auto py-8">
+    <div className="container mx-auto py-8 overflow-hidden">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <motion.div
           className="flex justify-center items-center"
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
           variants={imageVariants}
           transition={{ duration: 1 }}
         >

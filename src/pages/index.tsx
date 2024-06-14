@@ -13,19 +13,19 @@ import { createSection } from "@/components/createSection";
 
 
 export default function Home() {
-  const LegalStructure1Section = createSection(LegalStructure1, 'left');
-  const LegalStructure2Section = createSection(LegalStructure2, 'right');
+  const LegalStructure1Section = createSection(LegalStructure1, 'bottom');
+  const LegalStructure2Section = createSection(LegalStructure2, 'top');
   const OrganizationChartSection = createSection(OrganizationChart, 'top');
   const TestimonialSection = createSection(Testimonial, 'bottom');
-  const ContactSection = createSection(Contact, 'left');
-  const ProjectCardsSection = createSection(ProjectCards, 'right');
-
+  const ContactSection = createSection(Contact, 'bottom');
+  const ProjectCardsSection = createSection(ProjectCards, 'top');
+  const HeroSection = createSection(Hero,"left");
   return (
     <>
       <div className="relative" >
-        <Hero />
+        <HeroSection />
       </div>
-      <main className="flex flex-col px-4 py-8 container">
+      <main className="flex flex-col px-4 py-8 container mx-auto">
         <div className="row">
           <HomeHero />
           <ProjectCardsSection />

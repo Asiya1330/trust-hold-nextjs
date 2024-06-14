@@ -14,7 +14,7 @@ const OrganizationChart = () => {
   };
 
   return (
-    <div className="container mx-auto py-8">
+    <div className="container mx-auto py-8 overflow-hidden">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="flex flex-col justify-start items-start">
           <motion.div
