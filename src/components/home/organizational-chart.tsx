@@ -38,7 +38,7 @@ const OrganizationChart = () => {
             transition={{ duration: 1 }}
           >
             <Image
-              src="/officeImg.jpg"
+              src="/org-chart.jpeg"
               alt="Descriptive Alt Text"
               className="max-w-full h-auto rounded-3xl"
               width={500}

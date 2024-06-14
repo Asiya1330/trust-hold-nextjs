@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const services = () => {
@@ -38,10 +39,12 @@ const services = () => {
                 </div>
               </div>
               <div className="md:w-96 w-full p-5">
-                <img
+                <Image
                   src="https://image.flaticon.com/icons/svg/1330/1330216.svg"
                   alt="step 1"
                   className="object-scale-down"
+                  width={200}
+                  height={200}
                 />
               </div>
             </div>

@@ -1,8 +1,9 @@
+import Layout from '@/components/projects/loft-705/Layout'
 import React from 'react'
 
 const Loft705 = () => {
   return (
-    <div>Loft705</div>
+    <Layout>Loft705</Layout>
   )
 }
 

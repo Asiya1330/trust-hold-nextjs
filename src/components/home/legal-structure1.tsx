@@ -25,7 +25,7 @@ const LegalStructure1 = () => {
           transition={{ duration: 1 }}
         >
           <Image
-            src="/officeImg.jpg"
+            src="/legal-struc1.jpeg"
             alt="Descriptive Alt Text"
             className="max-w-full h-auto rounded-3xl"
             width={500}
@@ -41,7 +41,7 @@ const LegalStructure1 = () => {
           transition={{ duration: 1 }}
         >
           <h2 className="text-2xl md:text-4xl mb-4 text-primary font-light">
-            Profile
+            Legal Structure
           </h2>
           <p className="text-base md:text-lg leading-relaxed">
             This is your text content. It can be a description, an article, or

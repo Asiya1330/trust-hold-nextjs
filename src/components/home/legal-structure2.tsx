@@ -45,7 +45,7 @@ const LegalStructure2 = () => {
             transition={{ duration: 1 }}
           >
             <Image
-              src="/officeImg.jpg"
+              src="/legal-struc2.jpeg"
               alt="Descriptive Alt Text"
               className="max-w-full h-auto rounded-3xl"
               width={500}

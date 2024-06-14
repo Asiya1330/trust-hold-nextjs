@@ -62,7 +62,7 @@ const Testimonial = () => {
             transition={{ duration: 1 }}
           >
             <h2 className="text-2xl md:text-4xl mb-4 text-primary font-light">
-              Profile
+              Clients Testimonial
             </h2>
             <p className="text-base md:text-lg leading-relaxed">
               This is your text content. It can be a description, an article, or
