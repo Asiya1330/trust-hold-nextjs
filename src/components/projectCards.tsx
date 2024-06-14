@@ -68,7 +68,7 @@ const ProjectCards: FC = () => {
   ];
 
   return (
-    <div className="flex flex-wrap justify-around">
+    <div className="flex flex-wrap justify-around my-8">
       {projects.map((project, index) => (
         <ProjectCard 
           key={index} 

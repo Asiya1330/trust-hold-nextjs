@@ -42,7 +42,7 @@ const About = () => {
             variants={textVariants}
             transition={{ duration: 1 }}
           >
-            <h2 className="text-2xl md:text-4xl mb-4 text-primary font-light">
+            <h2 className="text-2xl md:text-4xl mb-4 text-primary font-bold">
               About
             </h2>
             <p className="text-base md:text-lg leading-relaxed">
