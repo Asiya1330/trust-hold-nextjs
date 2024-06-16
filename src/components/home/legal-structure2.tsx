@@ -26,7 +26,7 @@ const LegalStructure2 = () => {
           >
             <p className="text-base md:text-lg leading-relaxed">
               The Holding company will be governed by a Board of Directors,
-              which is the decisionmaking body, and retains overall
+              which is the decision making body, and retains overall
               responsibility for the management of the Project. Among other
               things, the Board will approve the appointment of the Development
               Manager, the Architect, the various consultants, the Contractors,
