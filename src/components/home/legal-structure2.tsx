@@ -24,15 +24,14 @@ const LegalStructure2 = () => {
             variants={textVariants}
             transition={{ duration: 1 }}
           >
-            {/* <h2 className="text-2xl md:text-4xl mb-4 text-primary font-light">
-              Profile
-            </h2> */}
             <p className="text-base md:text-lg leading-relaxed">
-              This is your text content. It can be a description, an article, or
-              any other type of content you want to display alongside the image.
-              This section is styled to be responsive and adapt to different
-              screen sizes. Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Corrupti magni a temporibus
+              The Holding company will be governed by a Board of Directors,
+              which is the decisionmaking body, and retains overall
+              responsibility for the management of the Project. Among other
+              things, the Board will approve the appointment of the Development
+              Manager, the Architect, the various consultants, the Contractors,
+              etc. and will delegate certain day-to-day responsibilities to the
+              Development Manager
             </p>
           </motion.div>
         </div>
@@ -45,7 +44,7 @@ const LegalStructure2 = () => {
             transition={{ duration: 1 }}
           >
             <Image
-              src="/legal-struc2.jpeg"
+              src="/legal-2.png"
               alt="Descriptive Alt Text"
               className="max-w-full h-auto rounded-3xl"
               width={500}

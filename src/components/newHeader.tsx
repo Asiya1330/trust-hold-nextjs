@@ -1,8 +1,7 @@
 import Link from "next/link";
-import React, { useState, FC } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { FaBars, FaTimes, FaChevronDown } from "react-icons/fa";
 import { motion } from "framer-motion";
-import { MenuItem } from "@/app/layout";
 import Image from "next/image";
 
 interface DropdownLink {
@@ -18,10 +17,37 @@ interface NavLink {
   dropdown: DropdownLink[];
 }
 
-const Header = () => {
+const NewHeader = () => {
+  const logoRef = useRef<HTMLDivElement>(null);
+  const hamburgerRef = useRef<HTMLDivElement>(null);
+  const mobileMenuRef = useRef<HTMLDivElement>(null);
+  const navRef = useRef<HTMLDivElement>(null);
+
   const [nav, setNav] = useState<boolean>(false);
   const [dropdownOpen, setDropdownOpen] = useState<number | null>(null);
-  const [mobileDropdownOpen, setMobileDropdownOpen] = useState<number | null>(null);
+  const [mobileDropdownOpen, setMobileDropdownOpen] = useState<number | null>(
+    null
+  );
+
+  useEffect(() => {
+    const animateOnLoad = () => {
+      if (
+        logoRef.current &&
+        hamburgerRef.current &&
+        navRef.current &&
+        mobileMenuRef.current
+      ) {
+        logoRef.current.style.animation = "slideInLeft 1s ease-out forwards";
+        hamburgerRef.current.style.animation =
+          "slideInRight 1s ease-out forwards";
+        navRef.current.style.animation = "slideDown 0.5s ease-out forwards";
+        mobileMenuRef.current.style.animation =
+          "slideDown 0.5s ease-out forwards";
+      }
+    };
+
+    animateOnLoad();
+  }, []);
 
   const topdown = {
     hidden: { opacity: 0, y: -20 },
@@ -30,7 +56,7 @@ const Header = () => {
 
   const links: NavLink[] = [
     {
-      id: 0, // Assigned 0 to keep the order
+      id: 0,
       link: "/",
       text: "Home",
       dropdown: [],
@@ -87,9 +113,14 @@ const Header = () => {
   const handleMouseLeave = () => {
     setDropdownOpen(null);
   };
-  const handleMobileDropdown = (id: number) => {
+
+  const toggleMobileMenu = () => {
+    setNav(!nav);
+  };
+  const toggleMobileDropdown = (id: number) => {
     setMobileDropdownOpen(mobileDropdownOpen === id ? null : id);
   };
+
   return (
     <motion.div
       initial="hidden"
@@ -97,7 +128,8 @@ const Header = () => {
       variants={topdown}
       transition={{ duration: 0.5 }}
     >
-      <div className="fixed top-auto mt-4  left-0 w-full md:w-11/12 md:mx-10 h-20 px-4 text-black bg-navbar-gradient shadow-md z-50 flex justify-between items-center rounded-lg">
+      {/* Desktop Navbar */}
+      <div className="hidden md:flex fixed top-auto mt-4 left-0 w-full md:w-11/12 md:mx-10 h-20 px-4 text-black bg-navbar-gradient shadow-md z-50 flex justify-between items-center rounded-lg">
         <div>
           <h1 className="text-5xl font-signature ml-2">
             <Link
@@ -107,10 +139,10 @@ const Header = () => {
             >
               <Image
                 src="/trusthold-logo.png"
-                alt="Trusthold Logo" // Descriptive alt text for accessibility
+                alt="Trusthold Logo"
                 width={200}
-                height={60} // Or "responsive" or "intrinsic" based on your needs (see below)
-                priority // Prioritize loading this image (optional)
+                height={60}
+                priority
               />
             </Link>
           </h1>
@@ -153,47 +185,93 @@ const Header = () => {
             </li>
           ))}
         </ul>
+      </div>
 
-        <div
-          onClick={() => setNav(!nav)}
-          className="cursor-pointer pr-4 z-20 text-black md:hidden"
-        >
-          {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
+      {/* Mobile Navbar */}
+      <nav
+        ref={navRef}
+        className="block md:hidden text-gray-200 absolute top-0 right-0 left-0 z-50 "
+      >
+        <div className="flex justify-between items-center h-20 bg-navbar-gradient">
+          <div className="flex items-center pl-4" ref={logoRef}>
+            <Link href="/">
+              <Image
+                src="/trusthold-logo.png"
+                alt="Trusthold Logo"
+                width={200}
+                height={60}
+                priority
+              />
+            </Link>
+          </div>
+
+          {/* MOBILE NAV ICON */}
+          <div className="block pr-4" ref={hamburgerRef}>
+            <button
+              aria-label="navigation"
+              type="button"
+              className="text-gray-900 transition duration-300 focus:outline-none focus:text-gray-900 hover:text-gray-900"
+              onClick={toggleMobileMenu}
+            >
+              {nav ? (
+                <FaTimes className="text-3xl" />
+              ) : (
+                <FaBars className="text-3xl" />
+              )}
+            </button>
+          </div>
         </div>
 
-        {nav && (
-          <ul className="z-10 flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-white to-gray-200 text-black">
+        {/* MOBILE MENU */}
+        <div
+          id="mobileMenu"
+          className={`overflow-hidden transition-all duration-500  ${
+            nav ? "max-h-screen" : "max-h-0"
+          }`}
+          ref={mobileMenuRef}
+        >
+          <div className="flex flex-col justify-center items-center w-full py-4 bg-red-700 bg-opacity-75">
             {links.map(({ id, link, text, dropdown }) => (
-              <li key={id} className="w-full">
+              <div key={id} className="w-full">
                 <div
-                  className="px-4 cursor-pointer capitalize py-2 text-xl flex items-center justify-between"
+                  className="block text-gray-200 cursor-pointer py-3 px-4 transition duration-300 focus:outline-none focus:text-[#0d001d] focus:underline hover:underline hover:text-[#0d001d]"
                   onClick={() =>
-                    setDropdownOpen(dropdownOpen === id ? null : id)
+                    dropdown.length > 0
+                      ? toggleMobileDropdown(id)
+                      : toggleMobileMenu()
                   }
                 >
-                  <Link onClick={() => setNav(!nav)} href={link}>
+                  <Link
+                    href={link}
+                    className="flex justify-between items-center"
+                  >
                     {text}
+                    {dropdown.length > 0 && (
+                      <FaChevronDown className="ml-2" size="10" />
+                    )}
                   </Link>
-                  {dropdown.length > 0 && <FaChevronDown size={20} />}
                 </div>
-                {dropdownOpen === id && dropdown.length > 0 && (
-                  <ul className="pl-8 border">
+                {dropdown.length > 0 && mobileDropdownOpen === id && (
+                  <div className="pl-4">
                     {dropdown.map((subLink) => (
-                      <li key={subLink.id} className="py text-md">
-                        <Link onClick={() => setNav(!nav)} href={subLink.link}>
-                          {subLink.text}
-                        </Link>
-                      </li>
+                      <Link
+                        key={subLink.id}
+                        href={subLink.link}
+                        className="block text-gray-200 cursor-pointer py-2 px-4 transition duration-300 focus:outline-none focus:text-[#0d001d] focus:underline hover:underline hover:text-red-500"
+                        onClick={toggleMobileMenu}
+                      >
+                        {subLink.text}
+                      </Link>
                     ))}
-                  </ul>
+                  </div>
                 )}
-              </li>
+              </div>
             ))}
-          </ul>
-        )}
-      </div>
+          </div>
+        </div>
+      </nav>
     </motion.div>
   );
 };
 
-export default Header;
+export default NewHeader;

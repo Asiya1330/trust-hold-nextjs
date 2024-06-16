@@ -24,7 +24,7 @@ const LegalStructure1 = () => {
           transition={{ duration: 1 }}
         >
           <Image
-            src="/legal-struc1.jpeg"
+            src="/legal-1.png"
             alt="Descriptive Alt Text"
             className="max-w-full h-auto rounded-3xl"
             width={500}
@@ -43,11 +43,12 @@ const LegalStructure1 = () => {
             Legal Structure
           </h2>
           <p className="text-base md:text-lg leading-relaxed">
-            This is your text content. It can be a description, an article, or
-            any other type of content you want to display alongside the image.
-            This section is styled to be responsive and adapt to different
-            screen sizes. Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Corrupti magni a temporibus cupiditate excepturi, 
+            To optimize the fiscal and legal structure, the Investors will
+            establish a Lebanese Holding company that will fully own an SAL
+            company, a project-specific joint-stock company created to own the
+            land and to develop the project. This Structure would allow the
+            Holding to benefit from the use of internal and external debt
+            structure to reduce taxable income at the joint-stock company level.
           </p>
         </motion.div>
       </div>

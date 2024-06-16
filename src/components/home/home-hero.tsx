@@ -45,15 +45,15 @@ const HomeHero = () => {
               Profile
             </h2>
             <p className="text-base md:text-lg leading-relaxed">
-              This is your text content. It can be a description, an article, or
-              any other type of content you want to display alongside the image.
-              This section is styled to be responsive and adapt to different
-              screen sizes. Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Corrupti magni a temporibus cupiditate excepturi, impedit
-              tempora ex est totam sapiente recusandae velit iste laudantium
-              alias, delectus rerum illum sunt officia! Lorem ipsum dolor sit
-              amet consectetur, adipisicing elit. Nihil autem porro molestiae
-              deleniti tempore, recusandae soluta tempora
+              Trusthold is dedicated to becoming one of the leading developers
+              in labanon. Trusthold is committed to maintaining ethical
+              practices in business and project development. Our word holds
+              strong and steady, from initial concept to the finalization of
+              each project. For more details about the core business, services
+              and current projects, kindly refer to the attached Company&lsquo;s
+              Profile. Along With the company;s profile,You will find all
+              current projects that are being developrd under the management of
+              Trusthold Development Group.
             </p>
           </motion.div>
         </div>
