@@ -39,7 +39,7 @@ interface Slide {
     <div className="relative h-[100vh]">
       {slides.map((slide, index) => (
         <div key={index} className={`absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out ${index === currentIndex ? 'opacity-100 scale-100' : 'opacity-0 scale-100 pointer-events-none'}`}>
-          <Image src={slide.src} className="w-full h-full object-cover" alt={`Slide ${index + 1}`} layout="fill"/>
+          <Image src={slide.src} className="w-full h-full md:object-cover" alt={`Slide ${index + 1}`} layout="fill"/>
           <div className="absolute bottom-0 left-0 right-0 flex flex-col justify-center items-center text-white bg-black bg-opacity-50">
             <div className="text-center px-4 py-6">
               <h2 className="text-4xl font-semibold mb-4">{slide.label}</h2>
