@@ -69,7 +69,6 @@ export default function Home() {
       <div className="relative">
         {/* <HeroSection /> */}
         <CarouselSlider slides={slides} />
-        <Image alt="" src="/loft55.jpeg" height="300" width="300" />
       </div>
       <main className="flex flex-col px-4 py-8 container mx-auto">
         <div className="row">
