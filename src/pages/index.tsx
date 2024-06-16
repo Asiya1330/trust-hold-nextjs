@@ -73,12 +73,12 @@ export default function Home() {
       <main className="flex flex-col px-4 py-8 container mx-auto">
         <div className="row">
           <HomeHero />
-          <ProjectCardsSection />
+          {/* <ProjectCardsSection />
           <LegalStructure1Section />
           <LegalStructure2Section />
           <OrganizationChartSection />
-          <TestimonialSection />
-          <ContactSection />
+          <TestimonialSection /> */}
+          {/* <ContactSection /> */}
         </div>
       </main>
     </>

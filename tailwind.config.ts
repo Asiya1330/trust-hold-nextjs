@@ -20,6 +20,18 @@ const config: Config = {
         white: '#ffffff',
         primary:"rgb(239 68 68)"
       },
+      transformStyle: {
+        '3d': 'preserve-3d',
+      },
+      backfaceVisibility: {
+        hidden: 'hidden',
+      },
+      perspective: {
+        '2000': '2000px',
+      },
+      transitionProperty: {
+        'transform': 'transform',
+      },
     },
   },
   plugins: [],

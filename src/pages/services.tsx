@@ -39,13 +39,7 @@ const services = () => {
                 </div>
               </div>
               <div className="md:w-96 w-full p-5">
-                <Image
-                  src="https://image.flaticon.com/icons/svg/1330/1330216.svg"
-                  alt="step 1"
-                  className="object-scale-down"
-                  width={200}
-                  height={200}
-                />
+                
               </div>
             </div>
           </div>
@@ -92,11 +86,7 @@ const services = () => {
                 </div>
               </div>
               <div className="md:w-96 w-full p-5">
-                <img
-                  src="https://image.flaticon.com/icons/svg/1330/1330216.svg"
-                  alt="step 2"
-                  className="object-scale-down"
-                />
+                
               </div>
             </div>
           </div>
@@ -138,11 +128,7 @@ const services = () => {
                 </div>
               </div>
               <div className="md:w-96 w-full p-5">
-                <img
-                  src="https://image.flaticon.com/icons/svg/1330/1330216.svg"
-                  alt="step 3"
-                  className="object-scale-down"
-                />
+                
               </div>
             </div>
           </div>

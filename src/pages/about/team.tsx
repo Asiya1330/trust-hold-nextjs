@@ -4,7 +4,7 @@ interface TeamMember {
   id: number;
   name: string;
   title: string;
-  imageUrl: string;
+  // imageUrl: string;
   description: string;
 }
 
@@ -13,7 +13,7 @@ const teamMembers: TeamMember[] = [
     id: 1,
     name: 'Ahmad El Hage',
     title: 'CEO',
-    imageUrl: 'https://via.placeholder.com/400',
+    // imageUrl: 'https://via.placeholder.com/400',
     description: `
       Ahmad Elhage is nothing less than a multi-talented leader in the business world. With over 35 years of experience in the marketing, finance, telecom, exports and real-estate sectors, Mr. Elhage has worked globally in Europe, North Africa and the Middle East.
       
@@ -26,16 +26,16 @@ const teamMembers: TeamMember[] = [
   },
   {
     id: 2,
-    name: 'Zaher Diab',
+    name: 'Simon Abdelmasih',
     title: 'General Manager',
-    imageUrl: 'https://via.placeholder.com/400',
-    description: `
-      Zaher Diab is an accomplished civil engineer with over 15 years experience in Construction & Project Management. Mr. Diab assumed positions of increasing responsibilities and oversaw the execution of a number of landmark projects worth over $400 million in Beirut, Dubai and Algeria, where he competently participated in the overall development process, including planning, organization/management, marketing & sales administration, contract administration, budgeting, cost and cash flow estimation and monitoring of variation orders.
-      
-      Since the beginning of his career, Mr.Diab has been known for his commitment to ethical practices in the business world, making him a leader with a reliable and trusted reputation.
-      
-      Mr. Diab holds a Bachelor of Science in Civil Engineering from Beirut Arab University, and a Master’s Degree in Business Administration from Lebanese American University. Furthermore, Mr. Diab holds a Project Management Professional (PMP) certificate, as well as other professional certifications in the fields of Risk Management, Time Management, Scheduling, Cost Control and Safety Regulations in Construction Management.
-    `,
+    // imageUrl: 'https://via.placeholder.com/400',
+    description: `Simon Abdelmasih is the General Manager and the BDM. 
+    He holds a Master's degree (MSc) and an Executive MBA (EMBA) from ESCP Europe and ESA.
+    
+    Mr Abdelmasih has over 25 years of experience in project identification and development.
+    
+    Throughout his career, Mr Abdelmasih has assumed positions of increasing responsibility. He has executed several major projects worth over $200 million in Lebanon and internationally. 
+    In these roles, he has demonstrated competence in identifying opportunities, conducting studies, facilitating development, managing sales, and overseeing project exits.`,
   },
 ];
 
@@ -51,7 +51,7 @@ const ManagementTeam = () => {
         {teamMembers.map((member, index) => (
           <div key={member.id} className={`flex flex-col ${index % 2 === 1 ? 'md:flex-row-reverse' : 'md:flex-row'} gap-6`}>
             <div className="w-full lg:w-1/4 rounded-3xl overflow-hidden">
-              <img src={member.imageUrl} alt={member.name} className="w-full h-full object-cover aspect-video lg:aspect-square" />
+              {/* <img src={member.imageUrl} alt={member.name} className="w-full h-full object-cover aspect-video lg:aspect-square" /> */}
             </div>
             <div className="w-full lg:w-9/12 bg-red-100 rounded-3xl flex flex-col justify-center p-8 lg:p-14">
               <h3 className="text-2xl capitalize text-red-900 font-semibold">{member.name}</h3>
