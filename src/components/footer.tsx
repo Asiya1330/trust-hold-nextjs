@@ -16,14 +16,6 @@ interface LinkSection {
 
 const linkSections: LinkSection[] = [
   {
-    id: 1,
-    title: "Projects",
-    links: [
-      { id: 1, link: "/projects/spear85", text: "Spear85" },
-      { id: 2, link: "/projects/lok45", text: "Lok45" },
-    ],
-  },
-  {
     id: 2,
     title: "Company",
     links: [

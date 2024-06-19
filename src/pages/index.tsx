@@ -22,7 +22,7 @@ const slides = [
     url: "/about",
   },
   {
-    src: "/1st.jpeg",
+    src: "/loft55-2.jpeg",
     label: "Trusthold Development Group",
     content:
       "Trusthold Development Group continues to offer expert services in development...",

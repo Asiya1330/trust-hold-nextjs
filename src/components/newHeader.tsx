@@ -90,6 +90,9 @@ const NewHeader = () => {
         { id: 2, link: "/projects/rubik-1709", text: "Rubik 1709" },
         { id: 3, link: "/projects/loft-705", text: "Loft 705" },
         { id: 4, link: "/projects/spears-88", text: "Spears 88" },
+        { id: 4, link: "/projects/el-palacio", text: "El Palacio" },
+        { id: 4, link: "/projects/loft-55", text: "Loft 55" },
+
       ],
     },
     {
