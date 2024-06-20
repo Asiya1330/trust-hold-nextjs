@@ -132,7 +132,7 @@ const NewHeader = () => {
       transition={{ duration: 0.5 }}
     >
       {/* Desktop Navbar */}
-      <div className="hidden md:flex fixed top-auto mt-4 left-0 w-full h-20 px-4 text-black bg-navbar-gradient shadow-md z-50 flex justify-between items-center rounded-lg">
+      <div className="hidden md:flex fixed top-auto left-0 w-full h-20 px-4 text-black bg-navbar-gradient shadow-md z-50 flex justify-between items-center ">
         <div>
           <h1 className="text-5xl font-signature ml-2">
             <Link
