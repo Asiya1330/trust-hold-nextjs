@@ -17,16 +17,16 @@ interface CarouselProps {
   interval?: number; // Optional interval prop for specifying time between slide changes (in milliseconds)
 }
 
-const CarouselSlider: React.FC<CarouselProps> = ({ slides, interval = 10000 }) => {
+const CarouselSlider: React.FC<CarouselProps> = ({ slides, interval = 3000 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // useEffect(() => {
-  //   const intervalId = setInterval(() => {
-  //     setCurrentIndex((prevIndex) => (prevIndex === slides.length - 1 ? 0 : prevIndex + 1));
-  //   }, interval);
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex === slides.length - 1 ? 0 : prevIndex + 1));
+    }, interval);
 
-  //   return () => clearInterval(intervalId);
-  // }, [slides, interval]);
+    return () => clearInterval(intervalId);
+  }, [slides, interval]);
 
   const prevSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex === 0 ? slides.length - 1 : prevIndex - 1));
