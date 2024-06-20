@@ -17,7 +17,7 @@ interface CarouselProps {
   interval?: number; // Optional interval prop for specifying time between slide changes (in milliseconds)
 }
 
-const CarouselSlider: React.FC<CarouselProps> = ({ slides, interval = 3000 }) => {
+const CarouselSlider: React.FC<CarouselProps> = ({ slides, interval = 5000 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -49,10 +49,16 @@ const CarouselSlider: React.FC<CarouselProps> = ({ slides, interval = 3000 }) =>
               transition={{ duration: 0.5 }}
               className="absolute inset-0 w-full h-full flex flex-col md:flex-row transition-opacity duration-1000 ease-in-out"
             >
-              <div className="relative w-full h-full md:w-1/2">
+              <motion.div
+                className="relative w-full h-full md:w-3/5"
+                initial={{ scale: 0.9 }}
+                animate={{ scale: 1 }}
+                exit={{ scale: 0.9 }}
+                transition={{ duration: 1 }}
+              >
                 <Image src={slide.src} className="w-full h-full md:object-cover" alt={`Slide ${index + 1}`} layout="fill" />
-              </div>
-              <div className="relative w-full md:h-full md:w-1/2 bg-black bg-opacity-50 text-white md:text-black flex items-center justify-center md:bg-transparent md:flex md:items-center md:justify-center">
+              </motion.div>
+              <div className="relative w-full md:h-full md:w-2/5 bg-black bg-opacity-50 text-white md:text-black flex items-center justify-center md:bg-transparent md:flex md:items-center md:justify-center">
                 <div className="absolute bottom-0 left-0 right-0 bg-gray-800 bg-opacity-75 p-4 md:relative md:bg-transparent md:p-6">
                   <h2 className="text-2xl md:text-4xl font-semibold mb-2 md:mb-4">{slide.label}</h2>
                   <p className="text-sm md:text-lg italic md:hidden block">{slide.content}</p>
