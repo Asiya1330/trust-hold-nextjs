@@ -105,9 +105,9 @@ const services = () => {
             <div className="w-32 py-5 border border-primary bg-primary rounded mr-4 uppercase flex flex-col items-center justify-center">
               <div className="text-3xl font-black text-white">Step 3</div>
             </div>
-            <div className="h-full border-l-4 border-transparent">
+            {/* <div className="h-full border-l-4 border-transparent">
               <div className="border-l-4 mr-4 h-full border-primary border-dashed"></div>
-            </div>
+            </div> */}
           </div>
           <div className="flex-auto border rounded  border-gray-300">
             <div className="flex md:flex-row flex-col items-center">

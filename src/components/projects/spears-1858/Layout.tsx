@@ -25,7 +25,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
   const [activeTab, setActiveTab] = useState(tabs[0]);
 
   return (
-    <div className=" container m-auto">
+    <div className=" container m-auto mt-14">
       <ul className="flex flex-wrap text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400">
         {tabs.map((tab, index) => (
           <li className="" key={index}>
