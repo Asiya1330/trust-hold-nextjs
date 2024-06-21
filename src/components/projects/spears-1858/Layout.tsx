@@ -45,7 +45,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
           </li>
         ))}
       </ul>
-      <div>{activeTab.element}</div>
+      <div className="p-4">{activeTab.element}</div>
     </div>
   );
 };

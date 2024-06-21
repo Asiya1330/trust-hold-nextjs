@@ -19,14 +19,14 @@ interface CarouselProps {
   interval?: number; // Optional interval prop for specifying time between slide changes (in milliseconds)
 }
 const NextArrow = ({ onClick }: { onClick?: () => void }) => (
-    <div className="absolute top-1/2 right-0 transform -translate-y-1/2 px-2 py-1 text-gray-700 rounded-r cursor-pointer z-10" onClick={onClick}>
-      <FaChevronCircleRight className="text-4xl" />
+    <div className="absolute top-1/2 right-0 transform -translate-y-1/2 px-2 py-1 text-primary rounded-r cursor-pointer z-10" onClick={onClick}>
+      <FaChevronCircleRight className="md:text-3xl" />
     </div>
   );
   
   const PrevArrow = ({ onClick }: { onClick?: () => void }) => (
-    <div className="absolute top-1/2 left-0 transform -translate-y-1/2 px-2 py-1 text-gray-700 rounded-l cursor-pointer z-10" onClick={onClick}>
-      <FaChevronCircleLeft className="text-4xl" />
+    <div className="absolute top-1/2 left-0 transform -translate-y-1/2 px-2 py-1 text-primary rounded-l cursor-pointer z-10" onClick={onClick}>
+      <FaChevronCircleLeft className="md:text-3xl" />
     </div>
   );
   
@@ -41,15 +41,15 @@ const CarouselSlider: React.FC<CarouselProps> = ({ slides, interval = 5000 }) =>
         autoplaySpeed: interval,
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,
-        responsive: [
-          {
-            breakpoint: 768,
-            settings: {
-              arrows: false,
-              dots: true
-            }
-          }
-        ]
+        // responsive: [
+        //   {
+        //     breakpoint: 768,
+        //     settings: {
+        //       arrows: false,
+        //       dots: true
+        //     }
+        //   }
+        // ]
       };
 
   return (
@@ -68,7 +68,7 @@ const CarouselSlider: React.FC<CarouselProps> = ({ slides, interval = 5000 }) =>
             <div className="relative  w-full h-[100vh] md:w-3/5">
               <Image src={slide.src} className="w-full h-full md:object-cover" alt={`Slide ${index + 1}`} layout="fill" />
             </div>
-            <div className="relative w-full md:h-[100vh] md:w-2/5 bg-black bg-opacity-50 text-white md:text-black flex items-center justify-center md:bg-transparent md:flex md:items-center md:justify-center">
+            <div className="relative w-full md:h-[100vh] md:w-2/5 bg-black bg-opacity-50 text-white md:text-black flex items-center md:bg-transparent md:flex md:items-center md:justify-center">
               <div className="absolute bottom-0 left-0 right-0 bg-gray-800 bg-opacity-75 p-4 md:relative md:bg-transparent md:p-6">
                 <h2 className="text-2xl md:text-4xl font-semibold mb-2 md:mb-4">{slide.label}</h2>
                 <p className="text-sm md:text-lg italic md:hidden block">{slide.content}</p>
@@ -77,7 +77,7 @@ const CarouselSlider: React.FC<CarouselProps> = ({ slides, interval = 5000 }) =>
                     <span className="text-sm md:text-base whitespace-pre-wrap">{slide.details}</span>
                   </div>
                 )}
-                <button className="mt-2 md:mt-4 bg-red-700 text-white px-2 py-1 md:px-4 md:py-2 rounded hover:bg-red-600 focus:outline-none">Learn More</button>
+                <button className="mt-2 md:mt-4 bg-primary text-white px-2 py-1 md:px-4 md:py-2 rounded hover:bg-red-600 focus:outline-none">Learn More</button>
               </div>
             </div>
             </motion.div>

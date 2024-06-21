@@ -2,7 +2,7 @@ import React from 'react'
 
 const Location = () => {
   return (
-    <div>L</div>
+    <div>Located on Abdul Kader Street - Mousaytbeh</div>
   )
 }
 

@@ -66,7 +66,7 @@ const Media = () => {
         <title>Media - TrustHold Group</title>
         <meta name="description" content="Media page showcasing our events and activities." />
       </Head>
-      <div className="min-h-screen bg-gray-100 py-12">
+      <div className="min-h-screen py-12">
         <div className="container mx-auto px-6">
           <h1 className="text-3xl font-bold mb-8 text-center text-gray-800">Our Media Gallery</h1>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

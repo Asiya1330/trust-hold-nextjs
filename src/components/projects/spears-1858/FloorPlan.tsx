@@ -2,7 +2,7 @@ import React from 'react'
 
 const FloorPlan = () => {
   return (
-    <div>FloorPlan</div>
+    <div>Built up area 9,500 m²</div>
   )
 }
 

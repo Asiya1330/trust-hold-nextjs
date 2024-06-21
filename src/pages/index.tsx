@@ -31,7 +31,7 @@ const slides = [
   },
   {
     src: "/loft55-2.jpeg",
-    label: "Trusthold Development Group",
+    label: "Loft 55 Bird-eye view",
     content: "Trusthold Development Group continues to offer expert services in development...",
     url: "/about",
     details: null // No additional details for this slide
@@ -44,7 +44,7 @@ const slides = [
     details: `
     ➢ Residential Project
     ➢ Located on Abdul Kader Street - Mousaytbeh
-    ➢ Apartments range between 110m² and 350m² (Simplexes and Duplexes)
+    ➢ Apartments range between 110m² and 350m²
     ➢ Built up area 9,500 m²
     ➢ Project Cost 25 M$`
   },

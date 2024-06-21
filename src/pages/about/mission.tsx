@@ -6,32 +6,8 @@ const Mission = () => {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-extrabold text-gray-900">Our Vision</h2>
         <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          <div>
-            <div className="flex items-center justify-center h-12 w-12 rounded-md bg-red-500 text-white">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z"
-                />
-              </svg>
-            </div>
-            <div className="mt-5">
-              <h3 className="text-lg font-medium text-gray-900">Mission</h3>
-              <p className="mt-2 text-base text-gray-500">
-                Trusthold aims to prioritize each client’s needs and interest. With a steadfast pledge to operate with resolute ethical standards, we continue to offer expert services in development and management, ensuring long-term value for all investors and quality properties for each tenant.
-              </p>
-            </div>
-          </div>
           
-          <div>
+        <div>
             <div className="flex items-center justify-center h-12 w-12 rounded-md bg-red-500 text-white">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -60,6 +36,32 @@ const Mission = () => {
               </p>
             </div>
           </div>
+          <div>
+            <div className="flex items-center justify-center h-12 w-12 rounded-md bg-red-500 text-white">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                className="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z"
+                />
+              </svg>
+            </div>
+            <div className="mt-5">
+              <h3 className="text-lg font-medium text-gray-900">Mission</h3>
+              <p className="mt-2 text-base text-gray-500">
+                Trusthold aims to prioritize each client’s needs and interest. With a steadfast pledge to operate with resolute ethical standards, we continue to offer expert services in development and management, ensuring long-term value for all investors and quality properties for each tenant.
+              </p>
+            </div>
+          </div>
+          
+          
           <div>
             <div className="flex items-center justify-center h-12 w-12 rounded-md bg-red-500 text-white">
               <svg
