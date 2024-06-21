@@ -54,7 +54,7 @@ const CarouselSlider: React.FC<CarouselProps> = ({ slides, interval = 5000 }) =>
                 initial={{ scale: 0.9 }}
                 animate={{ scale: 1 }}
                 exit={{ scale: 0.9 }}
-                transition={{ duration: 1 }}
+                transition={{ duration: 1.5 }}
               >
                 <Image src={slide.src} className="w-full h-full md:object-cover" alt={`Slide ${index + 1}`} layout="fill" />
               </motion.div>
@@ -74,10 +74,10 @@ const CarouselSlider: React.FC<CarouselProps> = ({ slides, interval = 5000 }) =>
           )
         ))}
       </AnimatePresence>
-      <button className="absolute top-1/2 left-0 transform -translate-y-1/2 px-2 py-1 text-white rounded-l focus:outline-none" onClick={prevSlide} title='prev'>
+      <button className="absolute top-1/2 left-0 transform -translate-y-1/2 px-2 py-1 text-gray-700 rounded-l focus:outline-none" onClick={prevSlide} title='prev'>
         <FaChevronCircleLeft />
       </button>
-      <button className="absolute top-1/2 right-0 transform -translate-y-1/2 px-2 py-1 text-white rounded-r focus:outline-none" onClick={nextSlide} title='next'>
+      <button className="absolute top-1/2 right-0 transform -translate-y-1/2 px-2 py-1 text-gray-700 rounded-r focus:outline-none" onClick={nextSlide} title='next'>
         <FaChevronCircleRight />
       </button>
     </div>

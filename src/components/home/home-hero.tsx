@@ -50,8 +50,8 @@ const HomeHero = () => {
               practices in business and project development. Our word holds
               strong and steady, from initial concept to the finalization of
               each project. For more details about the core business, services
-              and current projects, kindly refer to the attached Company&lsquo;s
-              Profile. Along With the company;s profile,You will find all
+              and current projects, kindly refer to the attached Company's
+              Profile. Along With the company's profile,You will find all
               current projects that are being developrd under the management of
               Trusthold Development Group.
             </p>

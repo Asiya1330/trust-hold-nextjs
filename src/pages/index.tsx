@@ -16,10 +16,17 @@ import Image from "next/image";
 const slides = [
   {
     src: "/loft55.jpeg",
-    label: "Our new project 2024",
-    content: "Trusthold Development Group is coming up with exciting new Project...",
+    label: "Our new project 2024 Loft 55",
+    content: "Trusthold Development Group is coming up with exciting new Project Loft 55...",
     url: "/about",
-    details: null // No additional details for this slide
+    details: `
+    ➢ Residential Project
+    ➢ Located at Achrafieh, Saide Street
+    ➢ Units range between 68 and 160sqm
+    ➢ Sellable area 1900 sqm
+    ➢ Project Cost 3.6 M$
+    ➢ Startign Date 2024
+    ➢ Delivery Date 2027`
   },
   {
     src: "/loft55-2.jpeg",

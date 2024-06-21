@@ -119,7 +119,7 @@ const services = () => {
                   POST-DEVELPMENT PHASE
                 </div>
                 <div className="px-3 pb-6">
-                  <ul>
+                  <ul className="list-disc list-inside">
                     <li>Delivery</li>
                     <li>Handover to clients</li>
                     <li>Permitting (occupancy permits)</li>
