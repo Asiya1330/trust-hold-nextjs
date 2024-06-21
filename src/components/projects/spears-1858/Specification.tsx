@@ -2,7 +2,7 @@ import React from 'react'
 
 const Specification = () => {
   return (
-    <div>Specification</div>
+    <div>Project Cost 25 M$</div>
   )
 }
 
