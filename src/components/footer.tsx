@@ -19,18 +19,18 @@ const linkSections: LinkSection[] = [
     id: 2,
     title: "Company",
     links: [
-      { id: 1, link: "#", text: "Privacy" },
-      { id: 2, link: "#", text: "Terms of Service" },
-      { id: 3, link: "#", text: "Contact Info" },
+      { id: 1, link: "/about/team", text: "Management Team" },
+      { id: 2, link: "/news", text: "News" },
+      { id: 3, link: "/careers", text: "Careers" },
     ],
   },
   {
     id: 3,
     title: "About",
     links: [
-      { id: 1, link: "/profile", text: "Profile" },
-      { id: 2, link: "/core-values", text: "Core Values" },
-      { id: 3, link: "/vision", text: "Vision" },
+      { id: 1, link: "/about/profile", text: "Profile" },
+      { id: 2, link: "/about/core-values", text: "Core Values" },
+      { id: 3, link: "/about/mission", text: "Vision" },
     ],
   },
 ];

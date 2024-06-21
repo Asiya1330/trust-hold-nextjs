@@ -74,3 +74,17 @@ span {
 .slick-track {
   height: 100%;
 }
+
+/* styles/Carousel.module.css */
+.slick-dots {
+  bottom: 20px;
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+  color: white;
+}
+
+.slick-dots li.slick-active button:before {
+  color: red;
+}

@@ -5,12 +5,13 @@ import HomeHero from "@/components/home/home-hero";
 import LegalStructure1 from "@/components/home/legal-structure1";
 import LegalStructure2 from "@/components/home/legal-structure2";
 import OrganizationChart from "@/components/home/organizational-chart";
-import Carousel from "@/components/home/testimonial";
 import Testimonial from "@/components/home/testimonial";
 import Contact from "@/components/home/contact";
 import Slider from "@/components/common/slider";
 import { createSection } from "@/components/createSection";
 import CarouselSlider from "@/components/CarousalSlider";
+import Carousal from "@/components/Carousal";
+
 import Image from "next/image";
 
 const slides = [
@@ -109,7 +110,9 @@ export default function Home() {
     <>
       <div className="relative">
         {/* <HeroSection /> */}
-        <CarouselSlider slides={slides} />
+        {/* <CarouselSlider slides={slides} /> */}
+        <Carousal slides={slides} />
+
       </div>
       <main className="flex flex-col px-4 py-8 container mx-auto">
         <div className="row">
