@@ -3,10 +3,10 @@ import React from 'react';
 
 const newsData = [
   { date: 'June 2024', title: 'Loft 55 - Construction works are in progress.', status: 'Construction works are in progress.' },
-  { date: 'June 2019', title: 'Spears 88 – Construction works are in Progress', status: 'Construction works are in Progress' },
-  { date: 'June 2019', title: 'Loft 705 – Construction works are in Progress', status: 'Construction works are in Progress' },
-  { date: 'June 2019', title: 'Spears 1858 - Project is finalized and handed-over', status: 'Project is finalized and handed-over' },
+  { date: 'June 2019', title: 'Loft 705 – Project is finalized and handed-over', status: 'Project is finalized and handed-over' },
+  { date: 'June 2019', title: 'Spears 88 – Project is finalized and handed-over', status: 'Project is finalized and handed-over' },
   { date: 'June 2019', title: 'Rubik 1709 – Project is finalized and handed-over', status: 'Project is finalized and handed-over' },
+  { date: 'June 2019', title: 'Spears 1858 - Project is finalized and handed-over', status: 'Project is finalized and handed-over' },
 ];
 
 const News: React.FC = () => {

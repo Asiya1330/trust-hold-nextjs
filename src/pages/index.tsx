@@ -18,7 +18,8 @@ const slides = [
   {
     src: "/loft55.jpeg",
     label: "Our new project 2024 Loft 55",
-    content: "Trusthold Development Group is coming up with exciting new Project Loft 55...",
+    content:
+      "Trusthold Development Group is coming up with exciting new Project Loft 55...",
     url: "/about",
     details: `
     ➢ Residential Project
@@ -27,26 +28,41 @@ const slides = [
     ➢ Sellable area 1900 sqm
     ➢ Project Cost 3.6 M$
     ➢ Startign Date 2024
-    ➢ Delivery Date 2027`
+    ➢ Delivery Date 2027`,
   },
   {
     src: "/loft55-2.jpeg",
     label: "Loft 55 Bird-eye view",
-    content: "Trusthold Development Group continues to offer expert services in development...",
+    content:
+      "Trusthold Development Group continues to offer expert services in development...",
     url: "/about",
-    details: null // No additional details for this slide
+    details: null, // No additional details for this slide
   },
   {
-    src: "/1858-2nd.jpeg",
-    label: "Spears 1858",
-    content: "Home to luxurious apartments...",
+    src: "/loft705-4th.jpeg",
+    label: "Loft 705",
+    content:
+      "Loft 705 is in the center of Beirut’s business and commercial district...",
     url: "/about",
     details: `
     ➢ Residential Project
-    ➢ Located on Abdul Kader Street - Mousaytbeh
-    ➢ Apartments range between 110m² and 350m²
-    ➢ Built up area 9,500 m²
-    ➢ Project Cost 25 M$`
+    ➢ Located at Achrafieh, between Abdul Wahab & Trabaud Streets
+    ➢ Apartments range between 100m² and 250m² (Simplexes and Duplexes)
+    ➢ Built up area 4,500 m²
+    ➢ Project Cost 12 M$`,
+  },
+  {
+    src: "/spears88-5th.jpeg",
+    label: "Spears 88",
+    content:
+      "Spears 88 is in the center of Beirut’s business and commercial district...",
+    url: "/about",
+    details: `
+    ➢ Retail and Offices Project
+    ➢ Located on the main road of Spears Street
+    ➢ Units range between 90 m² and 475 m²
+    ➢ Built up area 9,250 m²
+    ➢ Project Cost 25 M$`,
   },
   {
     src: "/rubik-3rd.jpeg",
@@ -58,32 +74,21 @@ const slides = [
     ➢ Located on Alfred Naccache Street, Near Hotel Dieu Hospital
     ➢ Units range between 95 m² and 400 m²
     ➢ Built up area 8,250 m²
-    ➢ Project Cost 20 M$`
+    ➢ Project Cost 20 M$`,
   },
   {
-    src: "/loft705-4th.jpeg",
-    label: "Loft 705",
-    content: "Loft 705 is in the center of Beirut’s business and commercial district...",
+    src: "/1858-2nd.jpeg",
+    label: "Spears 1858",
+    content: "Home to luxurious apartments...",
     url: "/about",
     details: `
     ➢ Residential Project
-    ➢ Located at Achrafieh, between Abdul Wahab & Trabaud Streets
-    ➢ Apartments range between 100m² and 250m² (Simplexes and Duplexes)
-    ➢ Built up area 4,500 m²
-    ➢ Project Cost 12 M$`
+    ➢ Located on Abdul Kader Street - Mousaytbeh
+    ➢ Apartments range between 110m² and 350m²
+    ➢ Built up area 9,500 m²
+    ➢ Project Cost 25 M$`,
   },
-  {
-    src: "/spears88-5th.jpeg",
-    label: "Spears 88",
-    content: "Spears 88 is in the center of Beirut’s business and commercial district...",
-    url: "/about",
-    details: `
-    ➢ Retail and Offices Project
-    ➢ Located on the main road of Spears Street
-    ➢ Units range between 90 m² and 475 m²
-    ➢ Built up area 9,250 m²
-    ➢ Project Cost 25 M$`
-  },
+
   // {
   //   src: "/ict.jpeg",
   //   label: "El Palacio",
@@ -112,7 +117,6 @@ export default function Home() {
         {/* <HeroSection /> */}
         {/* <CarouselSlider slides={slides} /> */}
         <Carousal slides={slides} />
-
       </div>
       <main className="flex flex-col px-4 py-8 container mx-auto">
         <div className="row">
