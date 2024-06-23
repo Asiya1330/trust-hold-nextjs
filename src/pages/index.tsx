@@ -27,7 +27,7 @@ const slides = [
     ➢ Units range between 68 and 160sqm
     ➢ Sellable area 1900 sqm
     ➢ Project Cost 3.6 M$
-    ➢ Startign Date 2024
+    ➢ Starting Date 2024
     ➢ Delivery Date 2027`,
   },
   {

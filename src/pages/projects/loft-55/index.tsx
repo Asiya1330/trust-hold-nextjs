@@ -3,17 +3,19 @@ import Layout from "@/components/projects/spears-1858/Layout";
 import React from "react";
 
 const project = {
-  name: "Spears 88",
-  location: "Located on the main road of Spears Street",
+  name: "Loft 55",
+  location: "Located at Achrafieh, Saide Street",
   description: [
-    "Retail and Offices Project",
-    "Units range between 90 m² and 475m²",
-    "Built up area 9,250 m²",
-    "Project Cost 25 M$"
-  ],
-  image: "/spears88-5th.jpeg"
-};
+    "Residential Project",
+    "Units range between 68 and 160sqm",
+    "Sellable area 1900 sqm",
+    "Project Cost 3.6 M$",
+    "Starting Date 2024",
+    "Delivery Date 2027",
 
+  ],
+  image: "/loft55.jpeg",
+};
 
 const index = () => {
   return (

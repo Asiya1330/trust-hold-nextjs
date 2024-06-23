@@ -1,10 +1,25 @@
-import Layout from '@/components/projects/loft-705/Layout'
-import React from 'react'
+import Project from "@/components/projectComponent";
+import Layout from "@/components/projects/spears-1858/Layout";
+import React from "react";
 
-const Loft705 = () => {
+const project = {
+  name: "Loft 705",
+  location: "Located at Achrafieh, between Abdul Wahab & Trabaud Streets",
+  description: [
+    "Residential Project",
+    "Apartments range between 100m² and 250m² (Simplexes and Duplexes)",
+    "Build up area 4,500 m²",
+    "Project cost 12 M$"
+  ],
+  image: "/loft705-4th.jpeg"
+};
+
+const index = () => {
   return (
-    <Layout>Loft705</Layout>
-  )
-}
+    <div className="py-12">
+      <Project project={project} />
+    </div>
+  );
+};
 
-export default Loft705
+export default index;
