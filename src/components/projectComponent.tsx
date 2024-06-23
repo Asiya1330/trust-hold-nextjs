@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { FaCheckCircle, FaMapMarkerAlt } from 'react-icons/fa';
 
 type ProjectProps = {
   name: string;
@@ -23,19 +24,20 @@ const Project: React.FC<{ project: ProjectProps }> = ({ project }) => {
           initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="text-lg mb-4"
+          className="text-lg mb-4 flex"
         >
-          {project.location}
+          <FaMapMarkerAlt className="text-primary mr-2"/>{project.location}
         </motion.p>
-        <ul>
+        <ul className='list'>
           {project.description.map((item, index) => (
             <motion.li
               key={index}
               initial={{ opacity: 0, x: -100 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.3 + index * 0.2 }}
-              className="mb-2"
+              className="mb-2 flex"
             >
+            <FaCheckCircle className="text-primary mr-2" />
               {item}
             </motion.li>
           ))}

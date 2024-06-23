@@ -14,7 +14,7 @@ const project = {
     "Delivery Date 2027",
 
   ],
-  image: "/loft55.jpeg",
+  image: "/loft-55-detailed.jpeg",
 };
 
 const index = () => {

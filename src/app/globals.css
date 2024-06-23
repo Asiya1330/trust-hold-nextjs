@@ -88,3 +88,18 @@ span {
 .slick-dots li.slick-active button:before {
   color: red;
 }
+
+/* .list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.list-item::before {
+  content: '';
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+  background: red;
+  mask: url('data:image/svg+xml,<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="12" fill="%23fff"/><path d="M9 11.5l2 2 4-4" stroke="%23fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>') center / contain no-repeat;
+} */

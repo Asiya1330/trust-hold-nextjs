@@ -11,7 +11,7 @@ const project = {
       "Built up area 64,000 m²",
       "Project Cost 50 M$"
     ],
-    image: ""
+    image: "/el-palacio.jpeg"
   };
 
 
