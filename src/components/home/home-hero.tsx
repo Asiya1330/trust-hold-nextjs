@@ -44,16 +44,26 @@ const HomeHero = () => {
             <h2 className="text-2xl md:text-4xl mb-4 text-primary font-bold">
               Profile
             </h2>
-            <p className="text-base md:text-lg leading-relaxed">
-              Trusthold is dedicated to becoming one of the leading developers
-              in labanon. Trusthold is committed to maintaining ethical
-              practices in business and project development. Our word holds
-              strong and steady, from initial concept to the finalization of
-              each project. For more details about the core business, services
-              and current projects, kindly refer to the attached Companys
-              Profile. Along With the companys profile,You will find all
-              current projects that are being developrd under the management of
-              Trusthold Development Group.
+            <p>
+              Trusthold Development Group is built on the foundations of trust
+              and rooted in professional integrity. A private real-estate
+              development firm, Trusthold invests in real-estate and develops
+              high-end residential, commercial, and retail projects in Lebanon.
+            </p>
+
+            <p>
+              Trusthold operates on the highest level of ethical standards to
+              ensure quality investments. With an eye for detail and an
+              assurance of excellence, Trusthold manages all services from the
+              inception of a project straight through to the Post-Development
+              phase.
+            </p>
+            <p>
+              In the reliable hands of our Trusthold management team, our
+              clients are our first priority. Our uncompromising faith in our
+              core values and our versatile experiences across the real-estate
+              sector ensure a long-term business relationship with our clients
+              in the Middle East.
             </p>
           </motion.div>
         </div>
