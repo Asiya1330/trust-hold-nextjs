@@ -134,21 +134,19 @@ const NewHeader = () => {
       {/* Desktop Navbar */}
       <div className="hidden md:flex fixed top-auto left-0 w-full h-20 px-4 text-black bg-navbar-gradient shadow-md z-50 flex justify-between items-center ">
         <div>
-          <h1 className="text-5xl font-signature ml-2">
             <Link
               className="link-underline link-underline-black z-10"
               href="/"
               rel="noreferrer"
             >
               <Image
-                src="/trusthold-logo.png"
+                src="/logotrust.png"
                 alt="Trusthold Logo"
-                width={200}
-                height={60}
+                width={150}
+                height={100}
                 priority
               />
             </Link>
-          </h1>
         </div>
 
         <ul className="hidden md:flex">
@@ -199,9 +197,9 @@ const NewHeader = () => {
           <div className="flex items-center pl-4" ref={logoRef}>
             <Link href="/">
               <Image
-                src="/trusthold-logo.png"
+                src="/logotrust.png"
                 alt="Trusthold Logo"
-                width={200}
+                width={150}
                 height={60}
                 priority
               />

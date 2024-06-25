@@ -106,7 +106,7 @@ const Header = () => {
               rel="noreferrer"
             >
               <Image
-                src="/trusthold-logo.png"
+                src="/logotrust.png"
                 alt="Trusthold Logo" // Descriptive alt text for accessibility
                 width={200}
                 height={60} // Or "responsive" or "intrinsic" based on your needs (see below)

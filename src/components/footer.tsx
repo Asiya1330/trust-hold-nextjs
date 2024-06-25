@@ -36,6 +36,8 @@ const linkSections: LinkSection[] = [
 ];
 
 const Footer: React.FC = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="bg-[#0d001d] text-white p-4 text-center py-12">
       <div className="mx-auto container overflow-hidden flex flex-col md:flex-row justify-between items-center md:items-start">
@@ -122,7 +124,7 @@ const Footer: React.FC = () => {
       </div>
       <div className="pt-4 mt-4 border-t border-gray-800 text-center">
         {" "}
-        © 2024 Trusthold Group. All rights reserved.
+        © {currentYear} Trusthold Group. All rights reserved.
       </div>
     </footer>
   );
