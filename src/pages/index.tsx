@@ -31,15 +31,15 @@ const slides = [
     ➢ Delivery Date 2027`,
   },
   {
-    src: "/loft55-2.jpeg",
-    label: "Loft 55 Bird-eye view",
+    src: "/el-placio-new.jpeg",
+    label: "El-Palacio Bird's-eye view",
     content:
       "Trusthold Development Group continues to offer expert services in development...",
     url: "/about",
     details: null, // No additional details for this slide
   },
   {
-    src: "/loft705-4th.jpeg",
+    src: "/loft-7-5-new.jpeg",
     label: "Loft 705",
     content:
       "Loft 705 is in the center of Beirut’s business and commercial district...",
@@ -52,7 +52,7 @@ const slides = [
     ➢ Project Cost 12 M$`,
   },
   {
-    src: "/spears88-5th.jpeg",
+    src: "/spears-88-new.jpeg",
     label: "Spears 88",
     content:
       "Spears 88 is in the center of Beirut’s business and commercial district...",
@@ -65,7 +65,7 @@ const slides = [
     ➢ Project Cost 25 M$`,
   },
   {
-    src: "/rubik-3rd.jpeg",
+    src: "/rubik-1709-new.jpeg",
     label: "Rubik 1709",
     content: "A location perfect for businesses and medical practices...",
     url: "/about",
@@ -77,7 +77,7 @@ const slides = [
     ➢ Project Cost 20 M$`,
   },
   {
-    src: "/1858-2nd.jpeg",
+    src: "/spears1858-new.jpeg",
     label: "Spears 1858",
     content: "Home to luxurious apartments...",
     url: "/about",
@@ -121,12 +121,7 @@ export default function Home() {
       <main className="flex flex-col px-4 py-8 container mx-auto">
         <div className="row">
           <HomeHero />
-          {/* <ProjectCardsSection />
-          <LegalStructure1Section />
-          <LegalStructure2Section />
-          <OrganizationChartSection />
-          <TestimonialSection /> */}
-          {/* <ContactSection /> */}
+
         </div>
       </main>
     </>

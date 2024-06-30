@@ -53,7 +53,7 @@ const CarouselSlider: React.FC<CarouselProps> = ({ slides, interval = 5000 }) =>
       };
 
   return (
-    <div className="relative h-[100vh] overflow-hidden">
+    <div className="relative h-[87vh] overflow-hidden">
       <Slider {...settings}>
         {slides.map((slide, index) => (
           <AnimatePresence key={index}>
