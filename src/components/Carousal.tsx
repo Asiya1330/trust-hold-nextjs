@@ -37,7 +37,7 @@ const CarouselSlider: React.FC<CarouselProps> = ({ slides, interval = 5000 }) =>
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: interval,
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,
@@ -65,7 +65,7 @@ const CarouselSlider: React.FC<CarouselProps> = ({ slides, interval = 5000 }) =>
             transition={{ duration: 0.5 }}
             className="relative h-full !flex flex-col md:flex-row"
           >
-            <div className="relative  w-full h-[100vh] md:w-3/5">
+            <div className="relative  w-full h-[87vh] md:w-3/5">
               <Image src={slide.src} className="w-full h-full md:object-cover" alt={`Slide ${index + 1}`} layout="fill" />
             </div>
             <div className="relative w-full md:h-[100vh] md:w-2/5 bg-black bg-opacity-50 text-white md:text-black flex items-center md:bg-transparent md:flex md:items-center md:justify-center">
