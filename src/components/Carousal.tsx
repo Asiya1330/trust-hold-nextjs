@@ -37,7 +37,7 @@ const CarouselSlider: React.FC<CarouselProps> = ({ slides, interval = 5000 }) =>
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: interval,
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,
