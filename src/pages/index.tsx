@@ -31,8 +31,8 @@ const slides = [
     ➢ Delivery Date 2027`,
   },
   {
-    src: "/el-placio-new.jpeg",
-    label: "El-Palacio Bird's-eye view",
+    src: "/loft55-2.jpeg",
+    label: "Loft 55 Bird-eye view",
     content:
       "Trusthold Development Group continues to offer expert services in development...",
     url: "/about",
@@ -89,18 +89,18 @@ const slides = [
     ➢ Project Cost 25 M$`,
   },
 
-  // {
-  //   src: "/ict.jpeg",
-  //   label: "El Palacio",
-  //   content: "El Palacio includes retail, commercial, and residential spaces...",
-  //   url: "/about",
-  //   details: `
-  //   ➢ Retail, Commercial, and Residential Project, includes Mall
-  //   ➢ Located in Bir El Jir on Usto Boulevard, Oran - Algeria
-  //   ➢ Units range between 58 m² and 148 m²
-  //   ➢ Built up area 64,000 m²
-  //   ➢ Project Cost 50 M$`
-  // }
+  {
+    src: "/el-placio-new.jpeg",
+    label: "El Palacio",
+    content: "El Palacio includes retail, commercial, and residential spaces...",
+    url: "/about",
+    details: `
+    ➢ Retail, Commercial, and Residential Project, includes Mall
+    ➢ Located in Bir El Jir on Usto Boulevard, Oran - Algeria
+    ➢ Units range between 58 m² and 148 m²
+    ➢ Built up area 64,000 m²
+    ➢ Project Cost 50 M$`
+  }
 ];
 
 export default function Home() {
