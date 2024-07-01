@@ -32,11 +32,11 @@ const slides = [
   },
   {
     src: "/loft55-2.jpeg",
-    label: "Loft 55 Bird-eye view",
+    label: "Loft 55",
     content:
       "Trusthold Development Group continues to offer expert services in development...",
     url: "/about",
-    details: null, // No additional details for this slide
+    details: " Bird's-eye view", // No additional details for this slide
   },
   {
     src: "/loft-7-5-new.jpeg",

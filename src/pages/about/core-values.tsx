@@ -28,8 +28,13 @@ const CoreValuesPage: React.FC = () => {
   const imageUrl = "/path/to/your/image.jpg"; // Replace with the actual image path
 
   return (
-    <div>
+    <div className="container flex mx-auto">
+      <div className="md:w-1/2">
+
+      </div>
+      <div className="md:w-1/2">
       <CoreValues values={coreValues} imageUrl={imageUrl} />
+      </div>
     </div>
   );
 };

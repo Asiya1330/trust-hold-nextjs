@@ -43,8 +43,8 @@ const ManagementTeam = () => {
   return (
 
     <section className="max-w-screen-xl mx-auto py-20 px-8 lg:px-10">
-      <h2 className="text-4xl xl:text-5xl capitalize text-center text-red-900 font-bold">Management Team</h2>
-      <hr className="mx-auto w-12 h-1 outline-0 border-0 bg-red-300 block mt-4 mb-6" />
+      <h2 className="text-4xl xl:text-5xl capitalize text-center font-bold text-primary">Management Team</h2>
+      <hr className="mx-auto w-12 h-1 outline-0 border-0 bg-gray-100 block mt-4 mb-6" />
       <p className="text-center text-xl text-gray-800">Our team consists only of the best talents</p>
 
       <div className="flex flex-col gap-6 mt-16">
@@ -53,10 +53,10 @@ const ManagementTeam = () => {
             <div className="w-full lg:w-1/4 rounded-3xl overflow-hidden">
               {/* <img src={member.imageUrl} alt={member.name} className="w-full h-full object-cover aspect-video lg:aspect-square" /> */}
             </div>
-            <div className="w-full lg:w-9/12 bg-red-100 rounded-3xl flex flex-col justify-center p-8 lg:p-14">
-              <h3 className="text-2xl capitalize text-red-900 font-semibold">{member.name}</h3>
-              <span className="inline-block capitalize text-xl text-red-900 font-light mt-1.5 mb-5">{member.title}</span>
-              <p className="text-red-900 opacity-75 leading-normal whitespace-pre-line">{member.description}</p>
+            <div className="w-full lg:w-9/12 bg-gray-100 rounded-3xl flex flex-col justify-center p-8 lg:p-14">
+              <h3 className="text-2xl capitalize  font-semibold text-primary">{member.name}</h3>
+              <span className="inline-block capitalize text-xl  font-light mt-1.5 mb-5">{member.title}</span>
+              <p className=" opacity-75 leading-normal whitespace-pre-line">{member.description}</p>
             </div>
           </div>
         ))}
