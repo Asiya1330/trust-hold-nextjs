@@ -145,7 +145,7 @@ const NewHeader = () => {
           transition={{ duration: 0.5 }}
         >
               <Image
-                src="/redT.jpeg"
+                src="/redT-remove.png"
                 alt="Trusthold Logo"
                 width={20}
                 height={20}
