@@ -135,17 +135,38 @@ const NewHeader = () => {
       <div className="hidden md:flex fixed top-auto left-0 w-full h-20 px-4 text-black bg-navbar-gradient shadow-md z-50 flex justify-between items-center ">
         <div>
             <Link
-              className="link-underline link-underline-black z-10"
+              className="link-underline link-underline-black z-10 flex"
               href="/"
               rel="noreferrer"
             >
+              <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5 }}
+        >
               <Image
-                src="/logotrust.png"
+                src="/redT.jpeg"
+                alt="Trusthold Logo"
+                width={20}
+                height={20}
+                priority
+                className="h-5 mix-blend-multiply"
+              />
+              </motion.div>
+              <motion.div
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+               <Image
+                src="/remaining-logo.jpeg"
                 alt="Trusthold Logo"
                 width={150}
-                height={100}
+                height={60}
                 priority
+                className="mix-blend-multiply"
               />
+              </motion.div>
             </Link>
         </div>
 
