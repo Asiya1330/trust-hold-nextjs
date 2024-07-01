@@ -140,9 +140,9 @@ const NewHeader = () => {
               rel="noreferrer"
             >
               <motion.div
-          initial={{ opacity: 0, x: 200, rotate: 360 }}
-          animate={{ opacity: 1, x: 0, rotate: 0 }}
-          transition={{ duration: 2 }}
+          initial={{ opacity: 0, x: 200, y: 200, rotate: 360 }}
+          animate={{ opacity: 1, x: 0, y: 0, rotate: 0 }}
+          transition={{ duration: 3 }}
         >
               <Image
                 src="/redT-remove.png"
@@ -156,7 +156,7 @@ const NewHeader = () => {
               <motion.div
           initial={{ opacity: 0, x: -200 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 2 }}
+          transition={{ duration: 3 }}
         >
                <Image
                 src="/remaining-logo.jpeg"
