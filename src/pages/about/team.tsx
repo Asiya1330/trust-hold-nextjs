@@ -44,7 +44,7 @@ const ManagementTeam = () => {
     <section className="max-w-screen-xl mx-auto py-20 px-8 ">
       <h2 className="text-4xl xl:text-5xl capitalize text-center font-bold text-primary">Management Team</h2>
       <hr className="mx-auto w-12 h-1 outline-0 border-0 bg-gray-100 block mt-4 mb-6" />
-      <div className="flex flex-col gap-6 mt-16">
+      <div className="flex flex-col gap-6 mt-4">
         {teamMembers.map((member, index) => (
           <div key={member.id} className={`flex flex-col ${index % 2 === 1 ? 'md:flex-row-reverse' : 'md:flex-row'} gap-6`}>
             <motion.div
