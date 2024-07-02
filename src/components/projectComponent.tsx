@@ -37,7 +37,9 @@ const Project: React.FC<{ project: ProjectProps }> = ({ project }) => {
               transition={{ duration: 0.5, delay: 0.3 + index * 0.2 }}
               className="mb-2 flex"
             >
-            <FaCheckCircle className="text-primary mr-2" />
+              <span className='mt-1'>
+            <FaCheckCircle size={10} className="text-primary mr-2" />
+              </span>
               {item}
             </motion.li>
           ))}
