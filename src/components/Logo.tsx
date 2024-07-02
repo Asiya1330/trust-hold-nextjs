@@ -32,15 +32,10 @@ const Logo = () => {
     >
       <motion.div
         key={pathname === "/" ? "home-animation" : "default-animation"}
-        initial={{ opacity: 0, x: 0, y: 50, rotate: 360 }}
-        animate={startAnimation ? { opacity: 1, y: [0, 50, 0], rotate: [0, 360, 0] } : { opacity: 1, y: 0, rotate: 0 }}
+        initial={{  x: 0, y: 50, rotate: 360 }}
+        animate={startAnimation ? {  y: [0, 50, 0], rotate: [0, 360, 0] } : {  y: 0, rotate: 0 }}
         transition={{ duration: 4, times: [0, 0.5, 1], ease: "easeOut" }}
-      
-        // animate={startAnimation ? { opacity: 1, y: [0, 50, 0] } : { opacity: 1, y: 0 }}
-        // transition={{ duration: 2, times: [0, 0.5, 1], ease: "easeOut" }}
-        // // animate={startAnimation ? { opacity: 1, x: 0, y: 0, rotate: 0 } : { opacity: 1, x: 0, y: 0, rotate: 0 }}
-        // // // animate={{ opacity: 1, x: 0, y: 0, rotate: 0 }}
-        // // transition={{ duration: 3 }}
+
       >
         <Image
           src="/redT-remove.png"
