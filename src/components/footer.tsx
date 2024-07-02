@@ -44,9 +44,9 @@ const Footer: React.FC = () => {
         <Link href="/" className="block mr-4 md:w-1/3">
           <Image
             src="/trusthold-logo.png"
-            width={100}
-            height={60}
-            className="w-40 ml-4 lg:ml-0"
+            width={150}
+            height={100}
+            className="w-48 ml-4 lg:ml-0"
             alt="logo"
           />
         </Link>

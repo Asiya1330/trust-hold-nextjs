@@ -182,15 +182,8 @@ const NewHeader = () => {
       >
         <div className="flex justify-between items-center h-20 bg-navbar-gradient">
           <div className="flex items-center pl-4" ref={logoRef}>
-            <Link href="/">
-              <Image
-                src="/logotrust.png"
-                alt="Trusthold Logo"
-                width={150}
-                height={60}
-                priority
-              />
-            </Link>
+            <Logo />
+
           </div>
 
           {/* MOBILE NAV ICON */}
