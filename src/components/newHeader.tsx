@@ -3,6 +3,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { FaBars, FaTimes, FaChevronDown } from "react-icons/fa";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Logo from "./Logo";
 
 interface DropdownLink {
   id: number;
@@ -133,52 +134,18 @@ const NewHeader = () => {
     >
       {/* Desktop Navbar */}
       <div className="hidden md:flex fixed top-auto left-0 w-full h-20 px-4 text-black bg-navbar-gradient shadow-md z-50 flex justify-between items-center ">
-        <div>
-            <Link
-              className="link-underline link-underline-black z-10 flex"
-              href="/"
-              rel="noreferrer"
-            >
-              <motion.div
-          initial={{ opacity: 0, x: 200, y: 200, rotate: 360 }}
-          animate={{ opacity: 1, x: 0, y: 0, rotate: 0 }}
-          transition={{ duration: 3 }}
-        >
-              <Image
-                src="/redT-remove.png"
-                alt="Trusthold Logo"
-                width={20}
-                height={20}
-                priority
-                className="h-5 mix-blend-multiply"
-              />
-              </motion.div>
-              <motion.div
-          initial={{ opacity: 0, x: -200 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 3 }}
-        >
-               <Image
-                src="/remaining-logo.jpeg"
-                alt="Trusthold Logo"
-                width={150}
-                height={60}
-                priority
-                className="mix-blend-multiply"
-              />
-              </motion.div>
-            </Link>
+        <div className="relative">
+          <Logo />
         </div>
 
         <ul className="hidden md:flex">
           {links.map(({ id, link, dropdown, text }) => (
             <li
               key={id}
-              className={`relative flex justify-center items-center nav-links px-6 cursor-pointer capitalize font-medium text-black hover:scale-105 duration-200 link-underline ${
-                text === "Contact us"
+              className={`relative flex justify-center items-center nav-links px-6 cursor-pointer capitalize font-medium text-black hover:scale-105 duration-200 link-underline ${text === "Contact us"
                   ? "bg-red-500 text-white rounded-3xl py-3 ml-4"
                   : "hover:text-red-500"
-              }`}
+                }`}
               onMouseEnter={() => handleMouseEnter(id)}
               onMouseLeave={handleMouseLeave}
             >
@@ -190,9 +157,8 @@ const NewHeader = () => {
               </Link>
               {dropdown.length > 0 && (
                 <ul
-                  className={`absolute top-[30px] left-0 border bg-white text-black w-48 mt-2 rounded-md transition-all duration-200 ${
-                    dropdownOpen === id ? "block" : "hidden"
-                  }`}
+                  className={`absolute top-[30px] left-0 border bg-white text-black w-48 mt-2 rounded-md transition-all duration-200 ${dropdownOpen === id ? "block" : "hidden"
+                    }`}
                 >
                   {dropdown.map((subLink) => (
                     <li
@@ -247,9 +213,8 @@ const NewHeader = () => {
         {/* MOBILE MENU */}
         <div
           id="mobileMenu"
-          className={`overflow-hidden transition-all duration-500  ${
-            nav ? "max-h-screen" : "max-h-0"
-          }`}
+          className={`overflow-hidden transition-all duration-500  ${nav ? "max-h-screen" : "max-h-0"
+            }`}
           ref={mobileMenuRef}
         >
           <div className="flex flex-col justify-center items-center w-full py-4 bg-red-700 bg-opacity-75">
