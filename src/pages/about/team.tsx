@@ -45,7 +45,6 @@ const ManagementTeam = () => {
     <section className="max-w-screen-xl mx-auto py-20 px-8 lg:px-10">
       <h2 className="text-4xl xl:text-5xl capitalize text-center font-bold text-primary">Management Team</h2>
       <hr className="mx-auto w-12 h-1 outline-0 border-0 bg-gray-100 block mt-4 mb-6" />
-      <p className="text-center text-xl text-gray-800">Our team consists only of the best talents</p>
 
       <div className="flex flex-col gap-6 mt-16">
         {teamMembers.map((member, index) => (

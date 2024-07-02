@@ -1,6 +1,7 @@
 import CoreValues from "@/components/core-values";
 import React from "react";
-
+import { motion } from "framer-motion";
+import Image from "next/image";
 const CoreValuesPage: React.FC = () => {
   const coreValues = [
     {
@@ -25,17 +26,52 @@ const CoreValuesPage: React.FC = () => {
     },
   ];
 
+  const imageVariants = {
+    hidden: { opacity: 0, x: -100 },
+    visible: { opacity: 1, x: 0 },
+  };
+
+  const textVariants = {
+    hidden: { opacity: 0, x: 100 },
+    visible: { opacity: 1, x: 0 },
+  };
   const imageUrl = "/path/to/your/image.jpg"; // Replace with the actual image path
 
   return (
-    <div className="container flex mx-auto">
-      <div className="md:w-1/2">
+    <div className="container mx-auto py-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="flex justify-center items-center">
+          <motion.div
+            className="flex justify-center items-center"
+            initial="hidden"
+            animate="visible"
+            variants={imageVariants}
+            transition={{ duration: 1 }}
+          >
+            <Image
+              src="/corevalues.jpg"
+              alt="Descriptive Alt Text"
+              className="max-w-full h-auto rounded-3xl"
+              width={500}
+              height={500}
+            />
+          </motion.div>
+        </div>
+        <div className="flex flex-col justify-start items-start">
+          <motion.div
+            className="flex flex-col justify-start items-start"
+            initial="hidden"
+            animate="visible"
+            variants={textVariants}
+            transition={{ duration: 1 }}
+          >
+            <CoreValues values={coreValues} imageUrl={imageUrl} />
 
-      </div>
-      <div className="md:w-1/2">
-      <CoreValues values={coreValues} imageUrl={imageUrl} />
+          </motion.div>
+        </div>
       </div>
     </div>
+
   );
 };
 
